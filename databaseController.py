@@ -1,19 +1,27 @@
-import mysql.connector
 from datetime import datetime
+from enum import Enum
+import mysql.connector
 import json
 
+class EventType(Enum):
+    FLOODED_ROAD = 1
+    PARTIAL_ROAD_CLOSURE = 2
+    TOTAL_ROAD_CLOSURE = 3
+    ROAD_ACCIDENT = 4
+
 class DatabaseObject:
-    def __init__(self, tableName : str, columnHeaders : list[str], columnTypes : list[str], row : list[str]):
+    def __init__(self, tableName : str, row : list[str]):
         self.tableName = tableName ## setting table metadata as attributes of the instance
-        self.columnHeaders = columnHeaders
-        self.columnTypes = columnTypes
+        self.columnHeaders,self.columnTypes = columnHeaders,columnTypes = tuple(map(list, list(zip(*DatabaseController.getTableMetadata().get(tableName)))))
         for c in range(len(row)): ## setting row info as attributes of the instance
             exec(f'self.{columnHeaders[c]} = {columnTypes[c]}(\'{row[c]}\')')
+
+    def row(self): return list(self.__dict__.values())[3:]
 
 class DatabaseController:
     @staticmethod
     def getTableMetadata() -> dict:
-        with open('tableMetadata.json') as tableMetadata: ## retrieving metadata from tableMetadata.json
+        with open('databaseMetadata.json') as tableMetadata: ## retrieving metadata from tableMetadata.json
             tableColumns = json.load(tableMetadata)
         return tableColumns
     
@@ -34,33 +42,27 @@ class DatabaseController:
 
     def select(self, tableName : str, id : int) -> DatabaseObject:
         columnHeaders,columnTypes = tuple(map(list, list(zip(*self.tableColumns.get(tableName))))) ## retrieving table metadata
-        query = f"select {','.join(columnHeaders)} from {tableName} where {columnHeaders[0]} = {id}" ## composing the query
+        query = f"select {','.join(columnHeaders)} from {tableName} where id = {id}" ## composing the query
         self.dbcursor.execute(query) ## executing query
         row = self.dbcursor.fetchall()[0] ## retrieving table data
-        return DatabaseObject(tableName, columnHeaders, columnTypes, list(map(str, row))) ## instantiating an object with retrieved data
+        return DatabaseObject(tableName, list(map(str, row))) ## instantiating an object with retrieved data
 
-    def insert(self, tableName : str, row : list) -> int:
-        columnHeaders,columnTypes = tuple(map(list, list(zip(*self.tableColumns.get(tableName))))) ## retrieving table metadata
-        rowValues = list(map(lambda x,y : str(x) if y == 'int' or x == "Null" else '\'' + str(x) + '\'' , row, columnTypes[1:])) ## adding apostrophes for text and datetime columns
-        query = f"insert into {tableName} ({','.join(columnHeaders[1:])}) values ({','.join(rowValues)})" ## composing the query
-        self.dbcursor.execute(query) ## executing query
+    def insert(self, object : DatabaseObject) -> int:
+        rowValues = list(map(lambda x,y : str(x) if y == 'int' or x == "Null" else '\'' + str(x) + '\'' , object.row()[1:], object.columnTypes[1:])) ## adding apostrophes for text and datetime columns
+        self.dbcursor.execute(f"insert into {object.tableName} ({','.join(object.columnHeaders[1:])}) values ({','.join(rowValues)})") ## executing query
         self.dbconnector.commit() ## commit updates
-        return self.dbcursor.lastrowid ## retrieving inserted row id
+        object.id = self.dbcursor.lastrowid ## updating object's id
+        return self.dbcursor.lastrowid
         
-    def delete(self, tableName : str, id : int) -> int:
-        columnHeaders = [x for x,y in self.tableColumns.get(tableName)] ## retrieving table metadata
-        query = f"delete from {tableName} where {columnHeaders[0]} = {id}"
-        print(query)
-        self.dbcursor.execute(query) ## executing query
+    def delete(self, object : DatabaseObject) -> int:
+        self.dbcursor.execute(f"delete from {object.tableName} where {object.columnHeaders[0]} = {object.id}") ## executing query
         self.dbconnector.commit() ## commit updates
         return self.dbcursor.rowcount ## retrieving deleted rows count
     
-    def update(self, tableName : str, databaseObject : DatabaseObject) -> int:
-        columnHeaders,columnTypes = tuple(map(list, list(zip(*self.tableColumns.get(tableName))))) ## retrieving table metadata
-        rowValues = list(map(lambda x,y : str(x) if y == 'int' else 'Null' if x == "None" else '\'' + str(x) + '\'' , list(databaseObject.__dict__.values())[4:], columnTypes[1:])) ## adding apostrophes for text and datetime columns
-        settingList = ','.join([x + "=" + y for x,y in zip(columnHeaders[1:], rowValues)]) ## composing the list of columns to be updated
-        query = f"update {tableName} set {settingList} where {columnHeaders[0]} = {databaseObject.__dict__.get(columnHeaders[0])}"
-        self.dbcursor.execute(query) ## executing query
+    def update(self, object : DatabaseObject) -> int:
+        rowValues = list(map(lambda x,y : str(x) if y == 'int' else 'Null' if x == "None" else '\'' + str(x) + '\'' , object.row()[1:], object.columnTypes[1:])) ## adding apostrophes for text and datetime columns
+        settingList = ','.join([x + "=" + y for x,y in zip(object.columnHeaders[1:], rowValues)]) ## composing the list of columns to be updated
+        self.dbcursor.execute(f"update {object.tableName} set {settingList} where id = {object.id}") ## executing query
         self.dbconnector.commit() ## commit updates
         return self.dbcursor.rowcount ## retrieving updated rows count
 

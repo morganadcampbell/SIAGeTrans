@@ -1,0 +1,80 @@
+{
+    "tableName": ["columnName", "columnType"],
+    "weathermeasurements": [
+        ["id", "int"],
+        ["ds_region","str"],
+        ["dt_measurement","str"],
+        ["nr_temperature_c","float"]
+    ],
+    "roads": [
+        ["id", "int"],
+        ["ds_coordinates","str"],
+        ["ds_zipcode","str"],
+        ["ds_address","str"]
+    ],
+    "roadsections": [
+        ["id", "int"],
+        ["ds_coordinates","str"],
+        ["id_road","int"],
+        ["es_status","str"]
+    ],
+    "sidewalks": [
+        ["id", "int"],
+        ["ds_coordinates","str"]
+    ],
+    "crosswalks": [
+        ["id", "int"],
+        ["ds_coordinates","str"],
+        ["id_roadsection","int"],
+        ["es_status","str"]
+    ],
+    "sidewalk_crosswalk": [
+        ["id", "int"],
+        ["id_sidewalk","int"],
+        ["id_crosswalk","int"]
+    ],
+    "trafficlights": [
+        ["id", "int"],
+        ["ds_coordinates","str"],
+        ["id_roadsection","int"],
+        ["nr_greentime_s","int"],
+        ["nr_yellowtime_s","int"],
+        ["nr_redtime_s","int"],
+        [ "es_status","str"]
+    ],
+    "eventtype": [
+        ["id", "int"],
+        ["ds_description","str"]
+    ],
+    "events": [
+        ["id", "int"],
+        ["id_eventtype","int"],
+        ["dt_creation","str"],
+        ["dt_start","str"],
+        ["dt_expiration","str"],
+        ["ds_comment","str"],
+        [ "es_status","str"]
+    ],
+    "roadsection_event": [
+        ["id", "int"],
+        ["id_roadsection","int"],
+        ["id_event","int"],
+        ["nr_severity","int"]
+    ],
+    "sidewalkmetrics": [
+        ["id", "int"],
+        ["id_sidewalk","int"],
+        ["dt_timestamp","str"],
+        ["nr_arriverate","float"],
+        ["nr_departurerate","float"],
+        ["nr_pedestriancount","int"]
+    ],
+    "trafficlightmetrics": [
+        ["id", "int"],
+        ["id_trafficlight","int"],
+        ["dt_timestamp","str"],
+        ["nr_arriverate","float"],
+        ["nr_departurerate","float"],
+        ["nr_vehiclecount","int"]
+    ]
+  }
