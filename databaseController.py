@@ -1,3 +1,4 @@
+from configs import configs
 from datetime import datetime
 from enum import Enum
 import mysql.connector
@@ -21,20 +22,16 @@ class DatabaseObject:
 class DatabaseController:
     @staticmethod
     def getTableMetadata() -> dict:
-        with open('databaseMetadata.json') as tableMetadata: ## retrieving metadata from tableMetadata.json
+        with open('files/databaseMetadata.json') as tableMetadata: ## retrieving metadata from tableMetadata.json
             tableColumns = json.load(tableMetadata)
         return tableColumns
     
-    def __init__(self, host : str = "localhost", user : str = "lsiagetrans", password : str = "123abc", database : str = "siagetrans"):
-        self.host = host ## setting parameters
-        self.user = user
-        self.password = password
-        self.database = database
+    def __init__(self):
         self.dbconnector = mysql.connector.connect( ## setting up connection
-                    host=self.host,
-                    user=self.user,
-                    password=self.password,
-                    database=self.database,
+                    host= configs.mysql_connection_config["host"],
+                    user=configs.mysql_connection_config["user"],
+                    password=configs.mysql_connection_config["password"],
+                    database=configs.mysql_connection_config["database"],
                     auth_plugin='mysql_native_password'
                     )
         self.dbcursor = self.dbconnector.cursor() ## creating cursor
