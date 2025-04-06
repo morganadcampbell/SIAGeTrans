@@ -1,4 +1,5 @@
-from databaseController import DatabaseController, DatabaseObject, EventType
+from controllers.databaseController import DatabaseController, DatabaseObject, EventType
+import configs.configs as configs
 from datetime import datetime
 
 databaseController = DatabaseController()

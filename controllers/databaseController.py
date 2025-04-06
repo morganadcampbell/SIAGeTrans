@@ -20,22 +20,16 @@ class DatabaseObject:
     def row(self): return list(self.__dict__.values())[3:]
 
 class DatabaseController:
+    def __init__(self):
+        self.dbconnector = mysql.connector.connect(**configs.mysql_connection_config)
+        self.dbcursor = self.dbconnector.cursor() ## creating cursor
+        self.tableColumns = DatabaseController.getTableMetadata()
+
     @staticmethod
     def getTableMetadata() -> dict:
         with open('files/databaseMetadata.json') as tableMetadata: ## retrieving metadata from tableMetadata.json
             tableColumns = json.load(tableMetadata)
         return tableColumns
-    
-    def __init__(self):
-        self.dbconnector = mysql.connector.connect( ## setting up connection
-                    host= configs.mysql_connection_config["host"],
-                    user=configs.mysql_connection_config["user"],
-                    password=configs.mysql_connection_config["password"],
-                    database=configs.mysql_connection_config["database"],
-                    auth_plugin='mysql_native_password'
-                    )
-        self.dbcursor = self.dbconnector.cursor() ## creating cursor
-        self.tableColumns = DatabaseController.getTableMetadata()
 
     def select(self, tableName : str, id : int) -> DatabaseObject:
         columnHeaders,columnTypes = tuple(map(list, list(zip(*self.tableColumns.get(tableName))))) ## retrieving table metadata
