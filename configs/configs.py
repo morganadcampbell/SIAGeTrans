@@ -10,7 +10,9 @@ mysql_connection_config = {
 mqtt_broker_default_client_config = { 
                         "host": "localhost",
                         "port": 1883,
+                        "qos" : 2,
                         "keepalive": 60,
+                        "client_name": "Default",
                         "subscriber_topic": None,
                         "publisher_topic": None
                      }
@@ -18,7 +20,9 @@ mqtt_broker_default_client_config = {
 mqtt_broker_trafficlight_client_config = { 
                         "host": "localhost",
                         "port": 1883,
+                        "qos" : 0,
                         "keepalive": 60,
-                        "subscriber_topic": "messages",
-                        "publisher_topic": None
+                        "client_name": "trafficlight",
+                        "subscriber_topic": "/message",
+                        "publisher_topic": "/message"
                      }

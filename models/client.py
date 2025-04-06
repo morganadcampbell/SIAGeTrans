@@ -8,40 +8,60 @@ import time
 class Client:
     __subscriber_topic = None
     __publisher_topic = None
+    __client_name = None
 
-    def __init__(self, host : str, port : int, keepalive : int = 60, subscriber_topic : str = None, publisher_topic : str = None):
+    def __init__(self, host : str, port : int, qos : int = 0, keepalive : int = 60, client_name : str = "Default", subscriber_topic : str = None, publisher_topic : str = None):
         self.__host = host
         self.__port = port
+        self.__qos = qos
         self.__keepalive = keepalive
+        Client.__client_name = client_name
         Client.__subscriber_topic = subscriber_topic
         Client.__publisher_topic = publisher_topic
 
-    @staticmethod
     def connection_callback(client, userdata, flags, rc):
         if rc == 0:
-            print(f'Client started connection to Broker. Client = {client}')
+            print(f'Client {Client.__client_name} started connection to Broker. Client = {client}')
             if Client.__subscriber_topic: client.subscribe(Client.__subscriber_topic)
         else:
-            print(f'Client closed connection to Broker. Código = {rc}')
+            print(f'Client {Client.__client_name} failed connecting to Broker. Código = {rc}')
 
-    @staticmethod
     def subscribe_callback(client, userdata, mid, granted_qos):
-        print(f'Client subscribed to {Client.__subscriber_topic} with qos = {granted_qos}.')
+        print(f'Client {Client.__client_name} subscribed to {Client.__subscriber_topic} with qos = {granted_qos}.')
 
-    @staticmethod
     def message_callback(client, userdata, message):
-        print(f'Client received a message: {message.payload}')
+        print(f'Client {Client.__client_name} received a message: {message.payload} from {message.topic}.')
+ 
+    def publish_callback(client, userdata, mid):
+        print(f'Client {Client.__client_name} published a message.')
     
     def connect_to_broker(self):
-        client = mqttclient.Client()
-        client.on_connect = self.__class__.connection_callback
-        client.on_subscribe = self.__class__.subscribe_callback
-        client.on_message = self.__class__.message_callback
-        client.connect(host=self.__host, port=self.__port, keepalive=self.__keepalive)
-        client.loop_start()
+        self.__client = mqttclient.Client(client_id=Client.__client_name)
+        self.__client.on_connect = self.__class__.connection_callback
+        self.__client.on_subscribe = self.__class__.subscribe_callback
+        self.__client.on_message = self.__class__.message_callback
+        self.__client.on_publish = self.__class__.publish_callback
+        self.__client.connect(host=self.__host, port=self.__port, keepalive=self.__keepalive)
+        self.__client.loop_start()
+
+    def disconnect_from_broker(self) -> int:
+        try:
+            self.__client.loop_stop()
+            self.__client.disconnect()
+            print(f"Client {Client.__client_name} disconnected from broker.")
+            return 1
+        except:
+            raise Exception(f"Client {Client.__client_name} failed to disconnect from broker.")
+    
+    def publish(self, message : str) -> int:
+        if Client.__publisher_topic:
+            self.__client.publish(topic=Client.__publisher_topic, payload=message, qos=self.__qos)
+            return 1
+        else: raise Exception(f"Client {Client.__client_name} does not have a publisher_topic defined.")
 
 
-if __name__ == "__main__": ## listener model
+if __name__ == "__main__": ## test
     client = Client(**configs.mqtt_broker_default_client_config)
     client.connect_to_broker()
-    while True: time.sleep(0.1)
+    time.sleep(10)
+    client.disconnect_from_broker()
