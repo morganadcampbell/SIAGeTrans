@@ -12,6 +12,10 @@
         ["ds_zipcode","str"],
         ["ds_address","str"]
     ],
+    "intersections": [
+        ["id", "int"],
+        ["ds_coordinates","str"]
+    ],
     "roadsections": [
         ["id", "int"],
         ["ds_coordinates","str"],

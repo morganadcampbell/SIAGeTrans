@@ -1,8 +1,4 @@
-import os, sys
-sys.path.insert(1, "/".join(os.path.realpath(__file__).split("/")[0:-2])) ## adding folders to path
-
 from configs import configs
-from datetime import datetime
 from models.databaseObject import DatabaseObject
 import mysql.connector
 import json
@@ -20,8 +16,8 @@ class DatabaseController:
         return tableColumns
 
     def select(self, tableName : str, id : int) -> DatabaseObject:
-        columnHeaders,columnTypes = tuple(map(list, list(zip(*self.tableColumns.get(tableName))))) ## retrieving table metadata
-        query = f"select {','.join(columnHeaders)} from {tableName} where id = {id}" ## composing the query
+        columnHeaders = [x for x,y in self.tableColumns.get('trafficlights')] ## retrieving table metadata
+        query = f"select * from {tableName} where id = {id}" ## composing the query
         self.dbcursor.execute(query) ## executing query
         attributes = dict(zip(columnHeaders,self.dbcursor.fetchall()[0])) ## retrieving table data
         return DatabaseObject(tableName, **attributes) ## instantiating an object with retrieved data
@@ -47,3 +43,14 @@ class DatabaseController:
         self.dbconnector.commit() ## commit updates
         return self.dbcursor.rowcount ## retrieving updated rows count
 
+    def getTrafficLightsAtIntersection(self, intersectionId : int):
+        columnHeaders = [x for x,y in self.tableColumns.get('trafficlights')] ## retrieving table metadata
+        query = f"select t.* from trafficlights t join roadsections r on t.id_roadsection = r.id join intersections i on r.id_intersection = i.id where i.id = {intersectionId}" ## composing the query
+        self.dbcursor.execute(query) ## executing query
+        managedTrafficLights = list()
+        for t in self.dbcursor.fetchall():
+            attributes = dict(zip(columnHeaders,t)) ## composing attributes with retrieved data
+            managedTrafficLights.append(DatabaseObject('trafficlights', **attributes)) ## instantiating an object with retrieved data
+        return managedTrafficLights
+        
+        
