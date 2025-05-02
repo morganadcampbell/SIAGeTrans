@@ -2,26 +2,27 @@ from models.databaseObject import DatabaseObject
 from models.client import Client
 import configs.configs as configs
 import time
+import pickle
 
 class IntersectionClient(Client):
-        __controller = None
-        def __init__(self, controller):
-            clientConfigs = configs.mqtt_broker_intersection_client_config
-            clientConfigs['client_name'] = clientConfigs.get('client_name') + '_' + str(controller.id)
-            clientConfigs['subscriber_topic'] = '/' + controller.region + clientConfigs.get('subscriber_topic')
-            super().__init__(**clientConfigs)
-            IntersectionClient.__controller = controller
+    __controller = None
+    def __init__(self, controller):
+        clientConfigs = configs.mqtt_broker_intersection_client_config
+        clientConfigs['client_name'] = clientConfigs.get('client_name') + '_' + str(controller.intersectionId)
+        clientConfigs['subscriber_topic'] = '/' + controller.region + clientConfigs.get('subscriber_topic')
+        super().__init__(**clientConfigs)
+        IntersectionClient.__controller = controller
 
-        def messageHandler(client, userdata, message):
-            Client.messageHandler(client, userdata, message)
-            payload = message.payload.decode('ascii').split('/')
-            managedTrafficLights = IntersectionClient.__controller.getManagedTrafficLightsId()
-            if payload[0] in managedTrafficLights:
-                IntersectionClient.__controller.updateTimes(payload[0], tuple(payload[1:]))
+    def messageHandler(client, userdata, message):
+        Client.messageHandler(client, userdata, message)
+        payload = message.payload.decode('ascii').split('/')
+        managedTrafficLights = IntersectionClient.__controller.getManagedTrafficLightsId()
+        if payload[0] in managedTrafficLights:
+            IntersectionClient.__controller.updateTimes(payload[0], tuple(payload[1:]))
 
 class TrafficLightController:
-    def __init__(self, id : int, region : str, managedTrafficLights : list[DatabaseObject]):
-        self.id = id
+    def __init__(self, intersectionId : int, region : str, managedTrafficLights : list[DatabaseObject]):
+        self.intersectionId = intersectionId
         self.region = region
         self.__managedTrafficLights = {str(x.getId()) : x for x in managedTrafficLights}
         self.__active = False

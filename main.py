@@ -8,9 +8,9 @@ databaseController = DatabaseController()
 
 
 # ## Testing TrafficLightController
-# trafficlights = databaseController.getTrafficLightsAtIntersection(1)
-# trafficlightController = TrafficLightController(1, '24210', trafficlights)
-# trafficlightController.startManagement()
+trafficlights = databaseController.getTrafficLightsAtIntersection(1)
+trafficlightController = TrafficLightController(1, '24210', trafficlights)
+trafficlightController.startManagement()
 
 
 
