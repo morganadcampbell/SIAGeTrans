@@ -52,8 +52,8 @@ class BargainSolver:
         functions = []
         for params in phaseParams:
             w = fixedParams["w"]
-            Fvip_i = 1 + fixedParams['Pvip'] * (params['VCLvip_i']/(fixedParams['VCLvip_tot']+1)) # 1 + Pvip * ( (SUM{l in i}(VCLvip_l))/(VCLvip_tot + 1) )
-            Ffld_i = 1 + fixedParams['Pfld'] * (params['VCLfld_i']/(fixedParams['VCLfld_tot']+1)) # 1 + Pfld * ( (SUM{l in i}(VCLfld_l))/(VCLfld_tot + 1) )
+            Fvip_i = 1 + fixedParams['Pvip'] * (params['VCLvip_i']/(params['VCLvip_tot']+1)) # 1 + Pvip * ( (SUM{l in i}(VCLvip_l))/(VCLvip_tot + 1) )
+            Ffld_i = 1 + fixedParams['Pfld'] * (params['VCLfld_i']/(params['VCLfld_tot']+1)) # 1 + Pfld * ( (SUM{l in i}(VCLfld_l))/(VCLfld_tot + 1) )
             Fwea_i = 1  + fixedParams['Pwea'] * ( abs(fixedParams['Tcur'] - ((fixedParams['Tmax'] + fixedParams['Tmin'])/2))/( (fixedParams['Tmax'] - fixedParams['Tmin'])/2 ) ) # 1 + Pwea * ( ABS(Tcur - ((Tmax + Tmin)/2))/( (Tmax - Tmin)/2 ) )
             QueuedVehicles = str(sum((1 - params['INDcls_l'][i]) * params['VCL_l'][i] for i in range(len(params['VCL_l'])))) # SUM{l in i}( (1 - INDcls_l) * VCL_l)
             ArrivingVehicles = str(sum((1 - params['INDcls_l'][i]) * params['DeltaVCLin_l'][i] for i in range(len(params['DeltaVCLin_l'])))) + ' * (' + str(fixedParams['t_c']) + ' - x)' # SUM{l in i}( (1 - INDcls_l) * DeltaVCLin_l ) * (t_c - t_g)
@@ -85,8 +85,6 @@ class BargainSolver:
                 - "Pvip": priority vehicles priorization factor
                 - "Pfld": flooding priorization factor
                 - "Pwea": weather priorization factor
-                - "VCLvip_tot": total number of prioritary vehicles in the intersection
-                - "VCLfld_tot": total number of vehicles in a flooding in the intersection
                 - "t_c": cycle's total time (sum of green time + waiting time (1s) for each phase)
             - phaseParams:
                 - "PDT_j": queued pedestrian in sidewalk (j) of a phase (i)
@@ -98,6 +96,8 @@ class BargainSolver:
                 - "DeltaPDTout_j": sideway (j) departing pedestrian rate (per second) in a phase (i)
                 - "VCLvip_i": number of prioritary vehicles in a phase (i)
                 - "VCLfld_i": number of vehicles in a flooding in a phase (i)
+                - "VCLvip_tot": total number of prioritary vehicles in the intersection
+                - "VCLfld_tot": total number of vehicles in a flooding in the intersection
 
         Return: list with best times for each phase of a cycle
         """
@@ -120,6 +120,8 @@ if __name__ == '__main__':
     phaseParams[0]["DeltaPDTout_j"] = [1,1] # sideway (j) departing pedestrian rate (per second) in a phase (i)
     phaseParams[0]["VCLvip_i"] = 0 # number of prioritary vehicles in a phase (i)
     phaseParams[0]["VCLfld_i"] = 0 # number of vehicles in a flooding in a phase (i)
+    phaseParams[0]["VCLvip_tot"] = 0 # total number of prioritary vehicles in the intersection
+    phaseParams[0]["VCLfld_tot"] = 0 # total number of vehicles in a flooding in the intersection
 
 
     phaseParams[1]["PDT_j"] = [1,1] # queued pedestrian in sidewalk (j) of a phase (i)
@@ -131,8 +133,9 @@ if __name__ == '__main__':
     phaseParams[1]["DeltaPDTout_j"] = [1,1] # sideway (j) departing pedestrian rate (per second) in a phase (i)
     phaseParams[1]["VCLvip_i"] = 0 # number of prioritary vehicles in a phase (i)
     phaseParams[1]["VCLfld_i"] = 0 # number of vehicles in a flooding in a phase (i)
+    phaseParams[1]["VCLvip_tot"] = 0 # total number of prioritary vehicles in the intersection
+    phaseParams[1]["VCLfld_tot"] = 0 # total number of vehicles in a flooding in the intersection
 
-    
 
     phaseParams[2]["PDT_j"] = [1,1] # queued pedestrian in sidewalk (j) of a phase (i)
     phaseParams[2]["INDcls_l"] = [0] # index of closure for a roadsection (l) in a phase (i)
@@ -143,6 +146,8 @@ if __name__ == '__main__':
     phaseParams[2]["DeltaPDTout_j"] = [1,1] # sideway (j) departing pedestrian rate (per second) in a phase (i)
     phaseParams[2]["VCLvip_i"] = 0 # number of prioritary vehicles in a phase (i)
     phaseParams[2]["VCLfld_i"] = 0 # number of vehicles in a flooding in a phase (i)
+    phaseParams[2]["VCLvip_tot"] = 0 # total number of prioritary vehicles in the intersection
+    phaseParams[2]["VCLfld_tot"] = 0 # total number of vehicles in a flooding in the intersection
 
 
     fixedParams = dict()
@@ -158,8 +163,6 @@ if __name__ == '__main__':
     fixedParams["Pvip"] = 2 # priority vehicles priorization factor
     fixedParams["Pfld"] = 2 # flooding priorization factor
     fixedParams["Pwea"] = 2 # weather priorization factor
-    fixedParams["VCLvip_tot"] = 0 # total number of prioritary vehicles in the intersection
-    fixedParams["VCLfld_tot"] = 0 # total number of vehicles in a flooding in the intersection
     fixedParams["t_c"] = 70 # cycle's total time (sum of green time + waiting time (1s) for each phase)
 
     bestx = BargainSolver.getBestSetup(fixedParams, phaseParams)

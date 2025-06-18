@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-18 12:02:34 by Eclipse SUMO netedit Version 1.23.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="VIP" vClass="emergency" color="red"/>
+    <!-- Routes -->
+    <route id="r_0" edges="E1 -E3"/>
+    <route id="r_1" edges="E1 -E2"/>
+    <route id="r_2" edges="E2 -E4"/>
+    <route id="r_3" edges="E2 -E3"/>
+    <route id="r_4" edges="E3 -E1"/>
+    <route id="r_5" edges="E3 -E4"/>
+    <route id="r_6" edges="E4 -E2"/>
+    <route id="r_7" edges="E4 -E1"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <personFlow id="pf_0" begin="0.00" end="10000.00" probability="0.04">
+        <personTrip from="E1" to="-E3"/>
+    </personFlow>
+    <personFlow id="pf_1" begin="0.00" end="10000.00" probability="0.04">
+        <personTrip from="E3" to="-E1"/>
+    </personFlow>
+    <personFlow id="pf_2" begin="0.00" end="10000.00" probability="0.04">
+        <personTrip from="E4" to="-E2"/>
+    </personFlow>
+    <personFlow id="pf_3" begin="0.00" end="10000.00" probability="0.04">
+        <personTrip from="E2" to="-E4"/>
+    </personFlow>
+    <flow id="f_0" begin="0.00" route="r_0" end="10000.00" probability="0.04"/>
+    <flow id="f_1" begin="0.00" route="r_4" end="10000.00" probability="0.04"/>
+    <flow id="f_10" type="VIP" begin="0.00" route="r_4" end="10000.00" probability="0.001"/>
+    <flow id="f_11" type="VIP" begin="0.00" route="r_6" end="10000.00" probability="0.001"/>
+    <flow id="f_2" begin="0.00" route="r_6" end="10000.00" probability="0.04"/>
+    <flow id="f_3" begin="0.00" route="r_2" end="10000.00" probability="0.04"/>
+    <flow id="f_4" begin="0.00" route="r_3" end="10000.00" probability="0.04"/>
+    <flow id="f_5" begin="0.00" route="r_1" end="10000.00" probability="0.04"/>
+    <flow id="f_6" begin="0.00" route="r_7" end="10000.00" probability="0.04"/>
+    <flow id="f_7" begin="0.00" route="r_5" end="10000.00" probability="0.04"/>
+    <flow id="f_8" type="VIP" begin="0.00" route="r_0" end="10000.00" probability="0.001"/>
+    <flow id="f_9" type="VIP" begin="0.00" route="r_2" end="10000.00" probability="0.001"/>
+</routes>

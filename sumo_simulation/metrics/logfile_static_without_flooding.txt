@@ -1,0 +1,37 @@
+***Starting server on port 51077 ***
+Loading net-file from 'sumo_simulation/sumo_elements/Exemplo/teste.net.xml' ... done (4ms).
+Loading additional-files from 'sumo_simulation/sumo_elements/Exemplo/teste.add.xml' ... done (35ms).
+Warning: Missing green phase in tlLogic 'J4', program '0' for tl-index 3.
+Loading route-files incrementally from 'sumo_simulation/sumo_elements/Exemplo/teste.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Simulation ended at time: 10182.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 25.59s
+ TraCI-Duration: 17.03s
+ Real time factor: 397.859
+ UPS: 5799.507659
+ UPS-Persons: 8974.953110
+Vehicles:
+ Inserted: 3140
+ Running: 0
+ Waiting: 0
+Persons:
+ Inserted: 1518
+ Running: 0
+Statistics (avg of 3140):
+ RouteLength: 189.04
+ Speed: 5.32
+ Duration: 47.27
+ WaitingTime: 23.68
+ TimeLoss: 32.71
+ DepartDelay: 0.26
+Pedestrian Statistics (avg of 1518 walks):
+ RouteLength: 155.69
+ Duration: 151.31
+ TimeLoss: 38.28
+DijkstraRouter answered 42716 queries and explored 23.61 edges on average.
+DijkstraRouter spent 0.22s answering queries (0.01ms on average).
+DijkstraRouter answered 1518 queries and explored 32.00 edges on average.
+DijkstraRouter spent 0.02s answering queries (0.01ms on average).
