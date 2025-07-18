@@ -4,13 +4,13 @@
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value=".\teste.net.xml"/>
-        <route-files value=".\teste.rou.xml"/>
-        <additional-files value=".\teste.add.xml"/>
+        <net-file value=".\test.net.xml"/>
+        <route-files value=".\test.rou.xml"/>
+        <additional-files value=".\test.add.xml"/>
     </input>
 
     <output>
-        <statistic-output value="teste.xml"/>
+        <statistic-output value="test.xml"/>
     </output>
 
 </sumoConfiguration>

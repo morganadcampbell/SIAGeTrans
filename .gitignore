@@ -1,4 +1,8 @@
 # ignore cache
 __pycache__/
-sumo_simulation/sumo_elements/Exemplo/e2_output/*
-logfile.txt
+
+#ignore outputfiles
+sumo_simulation/sumo_elements/e2_output/*
+
+#ignore logs
+*.log
