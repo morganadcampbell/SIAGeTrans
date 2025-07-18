@@ -3,6 +3,3 @@ __pycache__/
 
 #ignore outputfiles
 sumo_simulation/sumo_elements/e2_output/*
-
-#ignore logs
-*.log

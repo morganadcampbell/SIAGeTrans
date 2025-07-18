@@ -1,0 +1,98 @@
+***Starting server on port 60468 ***
+Loading net-file from 'sumo_simulation/sumo_elements/test.net.xml' ... done (4ms).
+Loading additional-files from 'sumo_simulation/sumo_elements/test.add.xml' ... done (29ms).
+Warning: Unused states in tlLogic 'J4', program '0' in phase 0 after tl-index 15
+Warning: Missing yellow phase in tlLogic 'J4', program '0' for tl-index 1 when switching to phase 1.
+Warning: Missing yellow phase in tlLogic 'J4', program '0' for tl-index 4 when switching to phase 4.
+Warning: Missing green phase in tlLogic 'J4', program '0' for tl-index 16.
+Loading route-files incrementally from 'sumo_simulation/sumo_elements/test.rou.xml'
+Loading done.
+Simulation version 1.23.1 started with time: 0.00.
+Warning: Person 'pf_1.236' is jammed on edge ':J4_c2', time=6452.00.
+Warning: Person 'pf_1.237' is jammed on edge ':J4_c2', time=6452.00.
+Simulation ended at time: 10168.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 18.33s
+ TraCI-Duration: 14.28s
+ Real time factor: 554.628
+ UPS: 9136.038837
+ UPS-Persons: 12786.832488
+Vehicles:
+ Inserted: 3140
+ Running: 0
+ Waiting: 0
+Persons:
+ Inserted: 1518
+ Running: 0
+ Jammed: 2
+Statistics (avg of 3140):
+ RouteLength: 189.89
+ Speed: 4.88
+ Duration: 53.34
+ WaitingTime: 24.27
+ TimeLoss: 33.94
+ DepartDelay: 0.26
+Pedestrian Statistics (avg of 1518 walks):
+ RouteLength: 155.69
+ Duration: 154.43
+ TimeLoss: 41.40
+DijkstraRouter answered 47337 queries and explored 23.64 edges on average.
+DijkstraRouter spent 0.20s answering queries (0.00ms on average).
+DijkstraRouter answered 1518 queries and explored 32.00 edges on average.
+DijkstraRouter spent 0.02s answering queries (0.01ms on average).
+
+-----------------------------------------------------------
+**** Adding simulation parameters from Sumo Controller ****
+t.get('RunAdaptation')= 0
+t.get('MinimumTime')= 15
+t.get('MaximumTime')= 45
+t.get('CurrentTemperature')= 10
+t.get('MaxTemperature')= 30
+t.get('MinTemperature')= 10
+t.get('EmergencyVehiclePriorization')= 0
+t.get('FloodingPriorization')= 0
+t.get('WeatherPriorization')= 0                        
+t.get('personPerCarFactor')= 1.54
+t.get('MaximumVehicleSpeed')= 16.67
+t.get('floodedVehicleSpeed')= 4.17
+t.get('floodedLanes')= ['E1_2', 'E1_1', 'E3_2']
+defaultVehicleFlowProbability= 0.04
+emrgVehicleFlowProbability= 0.001
+pedestrianFlowProbability= 0.04                        
+adaptationInterval= 600
+numberOfPhases= 3
+fixedPhaseTime= 30
+waitingTime= 5
+cicleFullTime= 105
+edges= ['E1', 'E2', 'E3', 'E4']
+crosswalk= [':J4_c0', ':J4_c1', ':J4_c2', ':J4_c3']
+entrySensors= ['e2_r1_in_1', 'e2_r1_in_2', 'e2_r2_in_1', 'e2_r2_in_2', 'e2_r3_in_1', 'e2_r3_in_2', 'e2_r4_in_1', 'e2_r4_in_2']
+exitSensors= ['e2_r1_out_1', 'e2_r1_out_2', 'e2_r2_out_1', 'e2_r2_out_2', 'e2_r3_out_1', 'e2_r3_out_2', 'e2_r4_out_1', 'e2_r4_out_2']
+entrySensorsPerPhase= [['e2_r4_in_2', 'e2_r2_in_2'], ['e2_r1_in_2', 'e2_r3_in_2'], ['e2_r1_in_1', 'e2_r2_in_1', 'e2_r3_in_1', 'e2_r4_in_1']]
+exitSensorsPerPhase= [['e2_r4_out_1', 'e2_r2_out_2'], ['e2_r1_out_2', 'e2_r3_out_2'], ['e2_r1_out_1', 'e2_r2_out_1'], ['e2_r3_out_1', 'e2_r4_out_2']]                        
+lanePerPhase= [['E2_2', 'E4_2'], ['E1_2', 'E3_2'], ['E1_1', 'E2_1', 'E3_1', 'E4_1']]
+crosswalkPerPhase= [[':J4_c1', ':J4_c3'], [':J4_c0', ':J4_c2'], []]
+PeopleEdgePerPhase= [['E2', 'E4'], ['E1', 'E3'], []]
+trafficLightTimes= []
+t.get('trafficImbalanceFrequency')= 20
+t.get('trafficImbalanceFactor')= 0                        
+WeightedTimeLoss= 36.37114641477029
+WeightedDuration= 86.28431515671963
+WeatherVariance= 100.0
+WeatherVariationFactor= 1.0                        
+timeLossMap= {'-E1_0': None, '-E1_1': '448.95', '-E1_2': '398.54', '-E2_0': None, '-E2_1': '341.12', '-E2_2': '518.05', '-E3_0': None, '-E3_1': '427.25', '-E3_2': '404.10', '-E4_0': None, '-E4_1': '359.50', '-E4_2': '431.38', 'E1_0': None, 'E1_1': '10808.84', 'E1_2': '19163.33', 'E2_0': None, 'E2_1': '9214.06', 'E2_2': '13695.93', 'E3_0': None, 'E3_1': '9810.52', 'E3_2': '15330.44', 'E4_0': None, 'E4_1': '8853.81', 'E4_2': '14207.70'}
+waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '8226.00', 'E1_2': '15399.00', 'E2_0': None, 'E2_1': '6119.00', 'E2_2': '10782.00', 'E3_0': None, 'E3_1': '6798.00', 'E3_2': '12016.00', 'E4_0': None, 'E4_1': '5648.00', 'E4_2': '11097.00'}
+floodedWaitingTimeMap= {'E1_1': '8226.00', 'E1_2': '15399.00', 'E3_2': '12016.00'}
+totalWaitingTime= 76085.0
+totalFloodedWaitingTime= 35641.0
+adjustedFloodedWaitingTime= 0.4684366169415785                        
+floodedTimeLossMap= {'E1_1': '10808.84', 'E1_2': '19163.33', 'E3_2': '15330.44'}
+totalTimeLoss= 104413.52
+totalFloodedTimeLoss= 45302.61
+adjustedFloodedTimeLoss= 0.43387685809270676                        
+CO2EmissionAvg= 121734.18559375216
+fuelUseAvg= 39458.66562686969
+EmrgWaitingTimeAvg= 32.611111111111114
+EmrgTimeLossAvg= 42.72222222222222
+EmrgDurationAvg= 64.52777777777777
