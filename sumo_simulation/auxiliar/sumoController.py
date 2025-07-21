@@ -108,8 +108,10 @@ def runSimulation(sumoCmd : str, simulationParams : dict):
     # simulation loop
     while traci.simulation.getMinExpectedNumber() > 0:
 
+        #to unbalance traffic, add vehicles to r_0 and r_4 (right-to-left and left-to-right)
         if simulationParams.get('trafficImbalanceFactor') > 0 and step < simulationDuration and step % simulationParams.get('trafficImbalanceFrequency') == 0:
-            for i in range(simulationParams.get('trafficImbalanceFactor')): traci.vehicle.add(f'ins{step}_{i}', 'r_0')
+            for i in range(simulationParams.get('trafficImbalanceFactor')): traci.vehicle.add(f'ins{step}_r0_{i}', 'r_0')
+            for i in range(simulationParams.get('trafficImbalanceFactor')): traci.vehicle.add(f'ins{step}_r4_{i}', 'r_4')
 
         # collecting data from people
         for x,y in traci.edge.getContextSubscriptionResults(edges[0]).items(): 
