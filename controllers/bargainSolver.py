@@ -47,9 +47,10 @@ class BargainSolver:
         Given a list of necessary params, returns a payoff function to be used in the bargain process for each phase
         The utility function Q for a phase i is given in terms of t_g (time of green light).
 
-        Q_i(t_g) = w * Femrg_i * Ffld_i * (<queued vehicles> + <arriving vehicles>) 
+        Q_i(t_g) =    w * ( (Ffld_i * <queued vehicles>) + <arriving vehicles>) 
                     + Fwea_i * (<queued pedestrians> + <arriving pedestrians>) 
-                    - w * <departing vehicles> - <departing vehicles>
+                    - w * <departing vehicles> 
+                    - <departing vehicles>
 
         Return: returns the utility function for each phase given the appropriate parameters
         """

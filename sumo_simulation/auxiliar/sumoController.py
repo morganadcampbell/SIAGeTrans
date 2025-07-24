@@ -52,7 +52,7 @@ def RunAdaptation(simulationParams, passingVehicles, queuedVehicles, floodedVehi
     fixedParams["Pwea"] = simulationParams.get('WeatherPriorization') # weather priorization factor
     fixedParams["t_c"] = cicleFullTime # cycle's total time (sum of green time + waiting time (5s) for each phase)
     fixedParams["DVFp"] = defaultVehicleFlowProbability # probability for emitting a default vehicle each second in each route
-    fixedParams["VVFp"] = emrgVehicleFlowProbability # probability for emitting a Emrg vehicle each second in each route
+    fixedParams["EVFp"] = emrgVehicleFlowProbability # probability for emitting a Emrg vehicle each second in each route
     fixedParams["PFp"] = pedestrianFlowProbability # probability for emitting a pedestrian each second in each route
     phaseParams = []
     for p in range(numberOfPhases):
