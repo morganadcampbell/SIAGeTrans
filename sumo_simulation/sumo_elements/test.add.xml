@@ -4,6 +4,24 @@
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
-    <!-- MeanDataLanes -->
+    <!-- Detectors -->
+    <laneAreaDetector id="e2_r1_in_1" lane="E1_1" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r1_in_1.xml"/>
+    <laneAreaDetector id="e2_r1_in_2" lane="E1_2" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r1_in_2.xml"/>
+    <laneAreaDetector id="e2_r1_out_1" lane="-E2_1" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r1_out_1.xml"/>
+    <laneAreaDetector id="e2_r1_out_2" lane="-E3_2" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r1_out_2.xml"/>
+    <laneAreaDetector id="e2_r2_in_1" lane="E2_1" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r2_in_1.xml"/>
+    <laneAreaDetector id="e2_r2_in_2" lane="E2_2" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r2_in_2.xml"/>
+    <laneAreaDetector id="e2_r2_out_1" lane="-E4_2" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r2_out_1.xml"/>
+    <laneAreaDetector id="e2_r2_out_2" lane="-E3_1" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r2_out_2.xml"/>
+    <laneAreaDetector id="e2_r3_in_1" lane="E3_1" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r3_in_1.xml"/>
+    <laneAreaDetector id="e2_r3_in_2" lane="E3_2" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r3_in_2.xml"/>
+    <laneAreaDetector id="e2_r3_out_1" lane="-E1_2" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r3_out_1.xml"/>
+    <laneAreaDetector id="e2_r3_out_2" lane="-E4_1" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r3_out_2.xml"/>
+    <laneAreaDetector id="e2_r4_in_1" lane="E4_1" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r4_in_1.xml"/>
+    <laneAreaDetector id="e2_r4_in_2" lane="E4_2" pos="20.00" length="5.00" period="600.00" file="e2_output\e2_r4_in_2.xml"/>
+    <laneAreaDetector id="e2_r4_out_1" lane="-E2_2" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r4_out_1.xml"/>
+    <laneAreaDetector id="e2_r4_out_2" lane="-E1_1" pos="5.00" length="5.00" period="600.00" file="e2_output\e2_r4_out_2.xml"/>
+
+    <!-- Measurements -->
     <laneData id="01" file="metrics\lanedata.xml"/>
 </additional>

@@ -1,4 +1,4 @@
-**** Simulation Results from 20/07/2025 at 10:10:08 ****
+**** Simulation Results from 24/07/2025 at 11:22:17 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 36.37043366251612
 	WeightedDuration= 86.28424216401889
@@ -45,11 +45,11 @@
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101008_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101008_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101008_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112217_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112217_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112217_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:10:47 ****
+**** Simulation Results from 24/07/2025 at 11:22:57 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 36.80453413482184
 	WeightedDuration= 86.682052382997
@@ -96,11 +96,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101008_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101047_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101047_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101047_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112257_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112257_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112257_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:14:03 ****
+**** Simulation Results from 24/07/2025 at 11:26:17 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 37.56423357664234
 	WeightedDuration= 87.48776298840704
@@ -147,11 +147,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101047_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101403_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101403_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101403_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112617_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112617_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112617_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:15:17 ****
+**** Simulation Results from 24/07/2025 at 11:27:26 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 36.096975096608006
 	WeightedDuration= 85.99849720910262
@@ -198,11 +198,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101403_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101517_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101517_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101517_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112726_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112726_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_112726_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:19:02 ****
+**** Simulation Results from 24/07/2025 at 11:31:00 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 34.43566981537139
 	WeightedDuration= 84.36646629454701
@@ -249,11 +249,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101517_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101902_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101902_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101902_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_113100_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_113100_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_113100_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:22:14 ****
+**** Simulation Results from 24/07/2025 at 12:28:28 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 38.481002576212994
 	WeightedDuration= 88.38085015027909
@@ -300,11 +300,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_101902_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102214_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102214_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102214_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_122828_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_122828_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_122828_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:23:22 ****
+**** Simulation Results from 24/07/2025 at 12:29:14 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 34.89290682696438
 	WeightedDuration= 84.81129240017175
@@ -351,11 +351,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102214_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102322_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102322_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102322_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_122914_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_122914_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_122914_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:26:49 ****
+**** Simulation Results from 24/07/2025 at 12:33:19 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 35.0545534564191
 	WeightedDuration= 85.00322026620867
@@ -402,11 +402,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102322_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102649_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102649_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102649_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123319_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123319_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123319_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:27:57 ****
+**** Simulation Results from 24/07/2025 at 12:34:35 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 35.850605410047294
 	WeightedDuration= 85.76835551738944
@@ -453,11 +453,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102649_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102757_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102757_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102757_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123435_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123435_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123435_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:29:07 ****
+**** Simulation Results from 24/07/2025 at 12:35:55 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 96.25713577650964
 	WeightedDuration= 138.25923700811055
@@ -504,11 +504,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102757_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102907_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102907_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102907_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123555_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123555_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_123555_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:30:29 ****
+**** Simulation Results from 24/07/2025 at 13:08:58 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 86.95863472514274
 	WeightedDuration= 129.0585761489937
@@ -555,11 +555,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_102907_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103029_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103029_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103029_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_130858_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_130858_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_130858_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:37:49 ****
+**** Simulation Results from 24/07/2025 at 13:12:33 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 88.17762691498947
 	WeightedDuration= 130.26389306097929
@@ -606,11 +606,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103029_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103749_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103749_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103749_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131233_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131233_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131233_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:40:07 ****
+**** Simulation Results from 24/07/2025 at 13:13:52 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 74.85748723340355
 	WeightedDuration= 117.09267047161309
@@ -657,11 +657,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_103749_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104007_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104007_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104007_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131352_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131352_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131352_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:46:47 ****
+**** Simulation Results from 24/07/2025 at 13:17:19 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 78.51491288675271
 	WeightedDuration= 120.7029137879243
@@ -708,11 +708,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104007_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104647_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104647_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104647_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131719_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131719_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_131719_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:54:17 ****
+**** Simulation Results from 24/07/2025 at 13:20:49 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 81.26146740762987
 	WeightedDuration= 123.47551817362572
@@ -759,11 +759,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_104647_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105417_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105417_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105417_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132049_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132049_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132049_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 10:56:22 ****
+**** Simulation Results from 24/07/2025 at 13:21:48 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 70.77735656353259
 	WeightedDuration= 113.02583358365875
@@ -810,11 +810,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105417_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105622_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105622_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105622_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132148_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132148_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132148_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:02:26 ****
+**** Simulation Results from 24/07/2025 at 13:25:47 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 84.01901171523001
 	WeightedDuration= 126.20396515470111
@@ -861,11 +861,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_105622_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110226_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110226_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110226_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132547_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132547_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132547_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:04:39 ****
+**** Simulation Results from 24/07/2025 at 13:26:51 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 76.4893691799338
 	WeightedDuration= 118.73130069089817
@@ -912,11 +912,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110226_tripinfo_
 	vehiclesCount= 5140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110439_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110439_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110439_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132651_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132651_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132651_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:06:44 ****
+**** Simulation Results from 24/07/2025 at 13:27:54 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 124.57451542762487
 	WeightedDuration= 161.06005384137504
@@ -963,11 +963,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110439_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110644_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110644_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110644_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132754_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132754_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132754_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:09:47 ****
+**** Simulation Results from 24/07/2025 at 13:29:26 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 107.5811762269622
 	WeightedDuration= 144.27521225926694
@@ -1014,11 +1014,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110644_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110947_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110947_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110947_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132926_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132926_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_132926_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:19:06 ****
+**** Simulation Results from 24/07/2025 at 13:34:05 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 114.59893559743212
 	WeightedDuration= 151.2815282667219
@@ -1065,11 +1065,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_110947_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_111906_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_111906_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_111906_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_133405_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_133405_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_133405_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:23:46 ****
+**** Simulation Results from 24/07/2025 at 13:36:25 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 90.58604369434615
 	WeightedDuration= 127.50631600745496
@@ -1116,11 +1116,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_111906_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_112346_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_112346_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_112346_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_133625_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_133625_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_133625_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:31:05 ****
+**** Simulation Results from 24/07/2025 at 13:41:03 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 100.7922447711743
 	WeightedDuration= 137.5441085110789
@@ -1167,11 +1167,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_112346_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113105_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113105_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113105_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134103_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134103_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134103_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:35:13 ****
+**** Simulation Results from 24/07/2025 at 13:46:12 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 94.25939324911978
 	WeightedDuration= 131.0784841582108
@@ -1218,11 +1218,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113105_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113513_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113513_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113513_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134612_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134612_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134612_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:37:00 ****
+**** Simulation Results from 24/07/2025 at 13:48:13 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 86.53784427417682
 	WeightedDuration= 123.46873058604265
@@ -1269,11 +1269,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113513_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113700_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113700_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113700_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134813_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134813_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_134813_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:40:33 ****
+**** Simulation Results from 24/07/2025 at 13:52:29 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 106.37994615862505
 	WeightedDuration= 143.11037481880305
@@ -1320,11 +1320,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_113700_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114033_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114033_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114033_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135229_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135229_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135229_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:42:31 ****
+**** Simulation Results from 24/07/2025 at 13:54:40 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 94.16653033754424
 	WeightedDuration= 130.9973079312487
@@ -1371,11 +1371,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114033_tripinfo_
 	vehiclesCount= 8140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114231_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114231_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114231_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135440_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135440_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135440_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:44:20 ****
+**** Simulation Results from 24/07/2025 at 13:56:40 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 145.72617410287873
 	WeightedDuration= 178.01350798198936
@@ -1422,11 +1422,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114231_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114420_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114420_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114420_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135640_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135640_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_135640_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:47:41 ****
+**** Simulation Results from 24/07/2025 at 14:00:22 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 123.39504980215658
 	WeightedDuration= 155.94378496384226
@@ -1473,11 +1473,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114420_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114741_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114741_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114741_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_140022_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_140022_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_140022_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:54:12 ****
+**** Simulation Results from 24/07/2025 at 14:07:34 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 122.41731204802801
 	WeightedDuration= 154.99447400736798
@@ -1524,11 +1524,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_114741_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115412_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115412_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115412_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_140734_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_140734_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_140734_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 11:58:17 ****
+**** Simulation Results from 24/07/2025 at 14:12:08 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 101.10653363351051
 	WeightedDuration= 133.9499249556556
@@ -1575,11 +1575,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115412_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115817_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115817_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115817_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_141208_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_141208_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_141208_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:04:00 ****
+**** Simulation Results from 24/07/2025 at 14:18:32 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 121.72285509619292
 	WeightedDuration= 154.32678400873243
@@ -1626,11 +1626,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_115817_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_120400_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_120400_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_120400_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_141832_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_141832_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_141832_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:10:01 ****
+**** Simulation Results from 24/07/2025 at 14:25:08 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 104.48444126074531
 	WeightedDuration= 137.28516850866419
@@ -1677,11 +1677,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_120400_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121001_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121001_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121001_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_142508_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_142508_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_142508_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:13:46 ****
+**** Simulation Results from 24/07/2025 at 14:29:09 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 97.26632760267451
 	WeightedDuration= 130.10124164278892
@@ -1728,11 +1728,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121001_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121346_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121346_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121346_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_142909_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_142909_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_142909_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:19:13 ****
+**** Simulation Results from 24/07/2025 at 14:34:57 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 121.52810547141468
 	WeightedDuration= 154.15008868877064
@@ -1779,11 +1779,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121346_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121913_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121913_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121913_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_143457_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_143457_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_143457_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:23:24 ****
+**** Simulation Results from 24/07/2025 at 14:39:24 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 104.33274252967676
 	WeightedDuration= 137.09653431573201
@@ -1830,11 +1830,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_121913_tripinfo_
 	vehiclesCount= 13140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122324_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122324_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122324_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_143924_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_143924_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_143924_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:27:12 ****
+**** Simulation Results from 24/07/2025 at 14:43:20 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 34.573355517389466
 	WeightedDuration= 80.59918419922714
@@ -1881,32 +1881,32 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122324_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122712_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122712_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122712_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144320_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144320_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144320_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:27:35 ****
+**** Simulation Results from 24/07/2025 at 14:43:44 ****
 **Comparative Metrics**
-	WeightedTimeLoss= 34.51250322026618
-	WeightedDuration= 80.5334907685702
-	WeightedWaitingTime= 14.432589094031773
-	averageCO2Emission= 117870.86573609764
-	averageFuelUse= 38206.47255819297
+	WeightedTimeLoss= 34.21963288965226
+	WeightedDuration= 80.2434521253757
+	WeightedWaitingTime= 14.292829540575354
+	averageCO2Emission= 117498.38150380955
+	averageFuelUse= 38085.80297457393
 	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 26.805555555555557
-	averageEmrgVehicleTimeLoss= 36.093333333333334
-	averageEmrgVehicleDuration= 49.5
+	averageEmrgVehicleWaitingTime= 25.333333333333332
+	averageEmrgVehicleTimeLoss= 34.779722222222226
+	averageEmrgVehicleDuration= 48.27777777777778
 	averageFloodedWaitingTime= 0.0
 	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 26.805555555555557
-	averageEmrgVehicleTimeLoss= 36.093333333333334
-	averageEmrgVehicleDuration= 49.5
-	averageVehicleWaitingTime= 21.40987261146497
-	averageVehicleTimeLoss= 30.9162834394904
-	averageVehicleDuration= 44.542038216560506
+	averageEmrgVehicleWaitingTime= 25.333333333333332
+	averageEmrgVehicleTimeLoss= 34.779722222222226
+	averageEmrgVehicleDuration= 48.27777777777778
+	averageVehicleWaitingTime= 21.202547770700637
+	averageVehicleTimeLoss= 30.673229299363133
+	averageVehicleDuration= 44.3031847133758
 	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 41.95132411067194
-	averagePersonDuration= 154.9822134387352
+	averagePersonTimeLoss= 41.55540843214756
+	averagePersonDuration= 154.5862977602108
 
 **Simulation Parameters**
 	RunAdaptation= 1
@@ -1920,23 +1920,23 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122712_tripinfo_
 **Simulation Data**
 	WeatherVariance= 0.0
 	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '429.04', '-E1_2': '432.53', '-E2_0': None, '-E2_1': '311.72', '-E2_2': '553.65', '-E3_0': None, '-E3_1': '411.19', '-E3_2': '423.22', '-E4_0': None, '-E4_1': '312.80', '-E4_2': '473.07', 'E1_0': None, 'E1_1': '9514.98', 'E1_2': '14587.02', 'E2_0': None, 'E2_1': '8432.90', 'E2_2': '12619.37', 'E3_0': None, 'E3_1': '8413.06', 'E3_2': '14040.32', 'E4_0': None, 'E4_1': '9324.38', 'E4_2': '14840.96'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6466.00', 'E1_2': '11174.00', 'E2_0': None, 'E2_1': '5414.00', 'E2_2': '9810.00', 'E3_0': None, 'E3_1': '5535.00', 'E3_2': '10913.00', 'E4_0': None, 'E4_1': '6174.00', 'E4_2': '11583.00'}
+	timeLossMap= {'-E1_0': None, '-E1_1': '438.01', '-E1_2': '433.36', '-E2_0': None, '-E2_1': '323.64', '-E2_2': '542.28', '-E3_0': None, '-E3_1': '417.16', '-E3_2': '419.41', '-E4_0': None, '-E4_1': '324.37', '-E4_2': '463.57', 'E1_0': None, 'E1_1': '9096.36', 'E1_2': '14154.95', 'E2_0': None, 'E2_1': '8300.70', 'E2_2': '13096.98', 'E3_0': None, 'E3_1': '8316.96', 'E3_2': '13747.49', 'E4_0': None, 'E4_1': '9196.75', 'E4_2': '15073.80'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6084.00', 'E1_2': '10858.00', 'E2_0': None, 'E2_1': '5329.00', 'E2_2': '10214.00', 'E3_0': None, 'E3_1': '5487.00', 'E3_2': '10677.00', 'E4_0': None, 'E4_1': '6070.00', 'E4_2': '11692.00'}
 	floodedWaitingTimeMap= {}
-	totalWaitingTime= 67069.0
+	totalWaitingTime= 66411.0
 	totalFloodedWaitingTime= 0
 	floodedTimeLossMap= {}
-	totalTimeLoss= 95120.20999999999
+	totalTimeLoss= 94345.79
 	totalFloodedTimeLoss= 0
 	EmrgVehicleCount= 36
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122735_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122735_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122735_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144344_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144344_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144344_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:28:03 ****
+**** Simulation Results from 24/07/2025 at 14:45:15 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 34.573355517389466
 	WeightedDuration= 80.59918419922714
@@ -1983,32 +1983,32 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122735_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122803_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122803_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122803_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144515_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144515_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144515_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:28:27 ****
+**** Simulation Results from 24/07/2025 at 14:45:39 ****
 **Comparative Metrics**
-	WeightedTimeLoss= 33.65071704594244
-	WeightedDuration= 79.6859167024474
-	WeightedWaitingTime= 14.528982395878058
-	averageCO2Emission= 118039.18004178656
-	averageFuelUse= 38261.38476654874
+	WeightedTimeLoss= 33.35185702018039
+	WeightedDuration= 79.3847144697295
+	WeightedWaitingTime= 14.220051524259338
+	averageCO2Emission= 117393.4821253958
+	averageFuelUse= 38051.92210838599
 	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 21.75
-	averageEmrgVehicleTimeLoss= 31.15027777777778
-	averageEmrgVehicleDuration= 44.638888888888886
+	averageEmrgVehicleWaitingTime= 22.63888888888889
+	averageEmrgVehicleTimeLoss= 32.37305555555555
+	averageEmrgVehicleDuration= 45.861111111111114
 	averageFloodedWaitingTime= 0.0
 	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 21.75
-	averageEmrgVehicleTimeLoss= 31.15027777777778
-	averageEmrgVehicleDuration= 44.638888888888886
-	averageVehicleWaitingTime= 21.552866242038217
-	averageVehicleTimeLoss= 31.102207006369394
-	averageVehicleDuration= 44.749044585987264
+	averageEmrgVehicleWaitingTime= 22.63888888888889
+	averageEmrgVehicleTimeLoss= 32.37305555555555
+	averageEmrgVehicleDuration= 45.861111111111114
+	averageVehicleWaitingTime= 21.094585987261148
+	averageVehicleTimeLoss= 30.602178343949117
+	averageVehicleDuration= 44.24554140127388
 	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 38.922338603425565
-	averagePersonDuration= 151.9532279314888
+	averagePersonTimeLoss= 39.03959815546773
+	averagePersonDuration= 152.07048748353097
 
 **Simulation Parameters**
 	RunAdaptation= 1
@@ -2022,23 +2022,23 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122803_tripinfo_
 **Simulation Data**
 	WeatherVariance= 25.0
 	WeatherVariationFactor= 0.5
-	timeLossMap= {'-E1_0': None, '-E1_1': '410.69', '-E1_2': '454.30', '-E2_0': None, '-E2_1': '262.64', '-E2_2': '596.02', '-E3_0': None, '-E3_1': '403.44', '-E3_2': '431.00', '-E4_0': None, '-E4_1': '275.23', '-E4_2': '517.18', 'E1_0': None, 'E1_1': '10648.21', 'E1_2': '13582.48', 'E2_0': None, 'E2_1': '9506.21', 'E2_2': '12709.78', 'E3_0': None, 'E3_1': '9108.58', 'E3_2': '13051.24', 'E4_0': None, 'E4_1': '10377.46', 'E4_2': '13302.19'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '7566.00', 'E1_2': '10225.00', 'E2_0': None, 'E2_1': '6431.00', 'E2_2': '9814.00', 'E3_0': None, 'E3_1': '6217.00', 'E3_2': '9896.00', 'E4_0': None, 'E4_1': '7151.00', 'E4_2': '10225.00'}
+	timeLossMap= {'-E1_0': None, '-E1_1': '411.65', '-E1_2': '456.27', '-E2_0': None, '-E2_1': '283.54', '-E2_2': '568.91', '-E3_0': None, '-E3_1': '402.12', '-E3_2': '435.53', '-E4_0': None, '-E4_1': '280.17', '-E4_2': '517.44', 'E1_0': None, 'E1_1': '10212.00', 'E1_2': '12810.01', 'E2_0': None, 'E2_1': '9264.98', 'E2_2': '12905.89', 'E3_0': None, 'E3_1': '9163.99', 'E3_2': '12987.22', 'E4_0': None, 'E4_1': '9958.57', 'E4_2': '13349.24'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '7191.00', 'E1_2': '9522.00', 'E2_0': None, 'E2_1': '6239.00', 'E2_2': '10039.00', 'E3_0': None, 'E3_1': '6282.00', 'E3_2': '9825.00', 'E4_0': None, 'E4_1': '6787.00', 'E4_2': '10161.00'}
 	floodedWaitingTimeMap= {}
-	totalWaitingTime= 67525.0
+	totalWaitingTime= 66046.0
 	totalFloodedWaitingTime= 0
 	floodedTimeLossMap= {}
-	totalTimeLoss= 95636.65
+	totalTimeLoss= 94007.53
 	totalFloodedTimeLoss= 0
 	EmrgVehicleCount= 36
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122827_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122827_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122827_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144539_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144539_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144539_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:28:57 ****
+**** Simulation Results from 24/07/2025 at 14:47:09 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 34.573355517389466
 	WeightedDuration= 80.59918419922714
@@ -2085,572 +2085,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122827_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122857_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122857_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122857_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144709_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144709_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144709_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:29:18 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 33.289156290253274
-	WeightedDuration= 79.32224130528124
-	WeightedWaitingTime= 14.691498497209103
-	averageCO2Emission= 118342.24112690908
-	averageFuelUse= 38359.578139891986
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 21.75
-	averageEmrgVehicleTimeLoss= 31.353888888888896
-	averageEmrgVehicleDuration= 44.833333333333336
-	averageFloodedWaitingTime= 0.0
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 21.75
-	averageEmrgVehicleTimeLoss= 31.353888888888896
-	averageEmrgVehicleDuration= 44.833333333333336
-	averageVehicleWaitingTime= 21.793949044585986
-	averageVehicleTimeLoss= 31.41330573248399
-	averageVehicleDuration= 45.05700636942675
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 37.1693741765481
-	averagePersonDuration= 150.20026350461134
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 0
-	FloodingPriorization= 0
-	WeatherPriorization= 1
-
-**Simulation Data**
-	WeatherVariance= 100.0
-	WeatherVariationFactor= 1.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '416.19', '-E1_2': '458.86', '-E2_0': None, '-E2_1': '257.41', '-E2_2': '584.86', '-E3_0': None, '-E3_1': '392.04', '-E3_2': '433.23', '-E4_0': None, '-E4_1': '259.47', '-E4_2': '521.05', 'E1_0': None, 'E1_1': '11229.52', 'E1_2': '12748.68', 'E2_0': None, 'E2_1': '10476.53', 'E2_2': '12176.13', 'E3_0': None, 'E3_1': '10040.44', 'E3_2': '12638.13', 'E4_0': None, 'E4_1': '10772.31', 'E4_2': '13153.50'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '8130.00', 'E1_2': '9465.00', 'E2_0': None, 'E2_1': '7345.00', 'E2_2': '9281.00', 'E3_0': None, 'E3_1': '7138.00', 'E3_2': '9444.00', 'E4_0': None, 'E4_1': '7455.00', 'E4_2': '10009.00'}
-	floodedWaitingTimeMap= {}
-	totalWaitingTime= 68267.0
-	totalFloodedWaitingTime= 0
-	floodedTimeLossMap= {}
-	totalTimeLoss= 96558.35
-	totalFloodedTimeLoss= 0
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122918_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122918_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122918_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:29:50 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 34.573355517389466
-	WeightedDuration= 80.59918419922714
-	WeightedWaitingTime= 14.683340489480464
-	averageCO2Emission= 118539.1015371353
-	averageFuelUse= 38422.821251171394
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 29.97222222222222
-	averageEmrgVehicleTimeLoss= 39.574166666666656
-	averageEmrgVehicleDuration= 53.02777777777778
-	averageFloodedWaitingTime= 0.0
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 29.97222222222222
-	averageEmrgVehicleTimeLoss= 39.574166666666656
-	averageEmrgVehicleDuration= 53.02777777777778
-	averageVehicleWaitingTime= 21.78184713375796
-	averageVehicleTimeLoss= 31.326299363057377
-	averageVehicleDuration= 44.95923566878981
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 41.28992753623188
-	averagePersonDuration= 154.32081686429513
-
-**Simulation Parameters**
-	RunAdaptation= 0
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 0
-	FloodingPriorization= 0
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '445.10', '-E1_2': '421.03', '-E2_0': None, '-E2_1': '304.86', '-E2_2': '562.87', '-E3_0': None, '-E3_1': '432.83', '-E3_2': '411.10', '-E4_0': None, '-E4_1': '311.77', '-E4_2': '488.74', 'E1_0': None, 'E1_1': '9858.57', 'E1_2': '15641.69', 'E2_0': None, 'E2_1': '9132.13', 'E2_2': '13788.93', 'E3_0': None, 'E3_1': '8876.43', 'E3_2': '12708.25', 'E4_0': None, 'E4_1': '8788.96', 'E4_2': '14239.69'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6785.00', 'E1_2': '12186.00', 'E2_0': None, 'E2_1': '6034.00', 'E2_2': '10883.00', 'E3_0': None, 'E3_1': '5997.00', 'E3_2': '9610.00', 'E4_0': None, 'E4_1': '5599.00', 'E4_2': '11138.00'}
-	floodedWaitingTimeMap= {}
-	totalWaitingTime= 68232.0
-	totalFloodedWaitingTime= 0
-	floodedTimeLossMap= {}
-	totalTimeLoss= 96412.95
-	totalFloodedTimeLoss= 0
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122950_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122950_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_122950_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:30:13 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 35.39904250751391
-	WeightedDuration= 81.4237870330614
-	WeightedWaitingTime= 15.100472305710605
-	averageCO2Emission= 119604.4075424385
-	averageFuelUse= 38768.71893415476
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageFloodedWaitingTime= 0.0
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageVehicleWaitingTime= 22.40063694267516
-	averageVehicleTimeLoss= 32.071856687898034
-	averageVehicleDuration= 45.7031847133758
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 42.28136363636362
-	averagePersonDuration= 155.31225296442688
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 1
-	FloodingPriorization= 0
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
-	floodedWaitingTimeMap= {}
-	totalWaitingTime= 70216.0
-	totalFloodedWaitingTime= 0
-	floodedTimeLossMap= {}
-	totalTimeLoss= 98822.42
-	totalFloodedTimeLoss= 0
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123013_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123013_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123013_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:30:46 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 35.39904250751391
-	WeightedDuration= 81.4237870330614
-	WeightedWaitingTime= 15.100472305710605
-	averageCO2Emission= 119604.4075424385
-	averageFuelUse= 38768.71893415476
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageFloodedWaitingTime= 0.0
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageVehicleWaitingTime= 22.40063694267516
-	averageVehicleTimeLoss= 32.071856687898034
-	averageVehicleDuration= 45.7031847133758
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 42.28136363636362
-	averagePersonDuration= 155.31225296442688
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 2
-	FloodingPriorization= 0
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
-	floodedWaitingTimeMap= {}
-	totalWaitingTime= 70216.0
-	totalFloodedWaitingTime= 0
-	floodedTimeLossMap= {}
-	totalTimeLoss= 98822.42
-	totalFloodedTimeLoss= 0
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123046_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123046_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123046_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:31:23 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 35.39904250751391
-	WeightedDuration= 81.4237870330614
-	WeightedWaitingTime= 15.100472305710605
-	averageCO2Emission= 119604.4075424385
-	averageFuelUse= 38768.71893415476
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageFloodedWaitingTime= 0.0
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageVehicleWaitingTime= 22.40063694267516
-	averageVehicleTimeLoss= 32.071856687898034
-	averageVehicleDuration= 45.7031847133758
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 42.28136363636362
-	averagePersonDuration= 155.31225296442688
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 3
-	FloodingPriorization= 0
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
-	floodedWaitingTimeMap= {}
-	totalWaitingTime= 70216.0
-	totalFloodedWaitingTime= 0
-	floodedTimeLossMap= {}
-	totalTimeLoss= 98822.42
-	totalFloodedTimeLoss= 0
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123123_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123123_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123123_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:31:58 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 35.39904250751391
-	WeightedDuration= 81.4237870330614
-	WeightedWaitingTime= 15.100472305710605
-	averageCO2Emission= 119604.4075424385
-	averageFuelUse= 38768.71893415476
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageFloodedWaitingTime= 0.0
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 22.47222222222222
-	averageEmrgVehicleTimeLoss= 32.043055555555554
-	averageEmrgVehicleDuration= 45.52777777777778
-	averageVehicleWaitingTime= 22.40063694267516
-	averageVehicleTimeLoss= 32.071856687898034
-	averageVehicleDuration= 45.7031847133758
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 42.28136363636362
-	averagePersonDuration= 155.31225296442688
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 5
-	FloodingPriorization= 0
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
-	floodedWaitingTimeMap= {}
-	totalWaitingTime= 70216.0
-	totalFloodedWaitingTime= 0
-	floodedTimeLossMap= {}
-	totalTimeLoss= 98822.42
-	totalFloodedTimeLoss= 0
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123158_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123158_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123158_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:32:34 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 36.37043366251612
-	WeightedDuration= 86.28424216401889
-	WeightedWaitingTime= 16.35895234006011
-	averageCO2Emission= 121734.18559375216
-	averageFuelUse= 39458.66562686969
-	averageFloodedTimeLoss= 33.507847633136095
-	averageEmrgVehicleWaitingTime= 32.611111111111114
-	averageEmrgVehicleTimeLoss= 42.72222222222222
-	averageEmrgVehicleDuration= 64.52777777777777
-	averageFloodedWaitingTime= 26.361686390532544
-	averageFloodedTimeLoss= 33.507847633136095
-	averageEmrgVehicleWaitingTime= 32.611111111111114
-	averageEmrgVehicleTimeLoss= 42.72222222222222
-	averageEmrgVehicleDuration= 64.52777777777777
-	averageVehicleWaitingTime= 24.26751592356688
-	averageVehicleTimeLoss= 33.940563694267546
-	averageVehicleDuration= 53.341082802547774
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 41.39664690382081
-	averagePersonDuration= 154.42753623188406
-
-**Simulation Parameters**
-	RunAdaptation= 0
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 0
-	FloodingPriorization= 0
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '448.95', '-E1_2': '398.54', '-E2_0': None, '-E2_1': '341.12', '-E2_2': '518.05', '-E3_0': None, '-E3_1': '427.25', '-E3_2': '404.10', '-E4_0': None, '-E4_1': '359.50', '-E4_2': '431.38', 'E1_0': None, 'E1_1': '10808.84', 'E1_2': '19163.33', 'E2_0': None, 'E2_1': '9214.06', 'E2_2': '13695.93', 'E3_0': None, 'E3_1': '9810.52', 'E3_2': '15330.44', 'E4_0': None, 'E4_1': '8853.81', 'E4_2': '14207.70'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '8226.00', 'E1_2': '15399.00', 'E2_0': None, 'E2_1': '6119.00', 'E2_2': '10782.00', 'E3_0': None, 'E3_1': '6798.00', 'E3_2': '12016.00', 'E4_0': None, 'E4_1': '5648.00', 'E4_2': '11097.00'}
-	floodedWaitingTimeMap= {'E1_1': '8226.00', 'E1_2': '15399.00', 'E3_2': '12016.00'}
-	totalWaitingTime= 76085.0
-	totalFloodedWaitingTime= 35641.0
-	floodedTimeLossMap= {'E1_1': '10808.84', 'E1_2': '19163.33', 'E3_2': '15330.44'}
-	totalTimeLoss= 104413.52
-	totalFloodedTimeLoss= 45302.61
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123234_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123234_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123234_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:32:58 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 36.096975096608006
-	WeightedDuration= 85.99849720910262
-	WeightedWaitingTime= 15.750966079862602
-	averageCO2Emission= 120516.67173362948
-	averageFuelUse= 39064.253417495245
-	averageFloodedTimeLoss= 29.300674486803523
-	averageEmrgVehicleWaitingTime= 29.72222222222222
-	averageEmrgVehicleTimeLoss= 39.27416666666667
-	averageEmrgVehicleDuration= 61.0
-	averageFloodedWaitingTime= 22.48973607038123
-	averageFloodedTimeLoss= 29.300674486803523
-	averageEmrgVehicleWaitingTime= 29.72222222222222
-	averageEmrgVehicleTimeLoss= 39.27416666666667
-	averageEmrgVehicleDuration= 61.0
-	averageVehicleWaitingTime= 23.3656050955414
-	averageVehicleTimeLoss= 33.07662420382169
-	averageVehicleDuration= 52.45891719745223
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 42.344604743083
-	averagePersonDuration= 155.37549407114625
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 0
-	FloodingPriorization= 1
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '437.34', '-E1_2': '405.34', '-E2_0': None, '-E2_1': '321.16', '-E2_2': '554.06', '-E3_0': None, '-E3_1': '459.55', '-E3_2': '379.02', '-E4_0': None, '-E4_1': '345.63', '-E4_2': '458.33', 'E1_0': None, 'E1_1': '9951.56', 'E1_2': '15469.78', 'E2_0': None, 'E2_1': '8310.00', 'E2_2': '15197.07', 'E3_0': None, 'E3_1': '9080.54', 'E3_2': '14544.78', 'E4_0': None, 'E4_1': '9757.13', 'E4_2': '15982.41'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '7444.00', 'E1_2': '11890.00', 'E2_0': None, 'E2_1': '5236.00', 'E2_2': '12102.00', 'E3_0': None, 'E3_1': '6057.00', 'E3_2': '11342.00', 'E4_0': None, 'E4_1': '6562.00', 'E4_2': '12621.00'}
-	floodedWaitingTimeMap= {'E1_1': '7444.00', 'E1_2': '11890.00', 'E3_2': '11342.00'}
-	totalWaitingTime= 73254.0
-	totalFloodedWaitingTime= 30676.0
-	floodedTimeLossMap= {'E1_1': '9951.56', 'E1_2': '15469.78', 'E3_2': '14544.78'}
-	totalTimeLoss= 101653.7
-	totalFloodedTimeLoss= 39966.12
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123258_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123258_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123258_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:34:44 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 36.99155216831262
-	WeightedDuration= 86.86904250751395
-	WeightedWaitingTime= 16.139544869042506
-	averageCO2Emission= 121436.33266119732
-	averageFuelUse= 39362.48653768914
-	averageFloodedTimeLoss= 29.184329896907215
-	averageEmrgVehicleWaitingTime= 28.0
-	averageEmrgVehicleTimeLoss= 37.42611111111111
-	averageEmrgVehicleDuration= 59.111111111111114
-	averageFloodedWaitingTime= 22.33357879234168
-	averageFloodedTimeLoss= 29.184329896907215
-	averageEmrgVehicleWaitingTime= 28.0
-	averageEmrgVehicleTimeLoss= 37.42611111111111
-	averageEmrgVehicleDuration= 59.111111111111114
-	averageVehicleWaitingTime= 23.94203821656051
-	averageVehicleTimeLoss= 33.76386624203829
-	averageVehicleDuration= 53.11050955414013
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 43.668056653491426
-	averagePersonDuration= 156.6989459815547
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 0
-	FloodingPriorization= 2
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '469.98', '-E1_2': '374.31', '-E2_0': None, '-E2_1': '352.41', '-E2_2': '529.95', '-E3_0': None, '-E3_1': '470.11', '-E3_2': '365.84', '-E4_0': None, '-E4_1': '350.90', '-E4_2': '451.40', 'E1_0': None, 'E1_1': '8896.71', 'E1_2': '15588.92', 'E2_0': None, 'E2_1': '8209.32', 'E2_2': '16638.09', 'E3_0': None, 'E3_1': '8809.31', 'E3_2': '15146.69', 'E4_0': None, 'E4_1': '9845.42', 'E4_2': '17379.57'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6343.00', 'E1_2': '12146.00', 'E2_0': None, 'E2_1': '5129.00', 'E2_2': '13385.00', 'E3_0': None, 'E3_1': '5756.00', 'E3_2': '11840.00', 'E4_0': None, 'E4_1': '6601.00', 'E4_2': '13881.00'}
-	floodedWaitingTimeMap= {'E1_1': '6343.00', 'E1_2': '12146.00', 'E3_2': '11840.00'}
-	totalWaitingTime= 75081.0
-	totalFloodedWaitingTime= 30329.0
-	floodedTimeLossMap= {'E1_1': '8896.71', 'E1_2': '15588.92', 'E3_2': '15146.69'}
-	totalTimeLoss= 103878.93
-	totalFloodedTimeLoss= 39632.32
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123444_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123444_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123444_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:36:29 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 37.64305495920993
-	WeightedDuration= 87.52898239587806
-	WeightedWaitingTime= 16.978746243022755
-	averageCO2Emission= 123584.35337771925
-	averageFuelUse= 40058.601051355756
-	averageFloodedTimeLoss= 31.28498886414254
-	averageEmrgVehicleWaitingTime= 32.138888888888886
-	averageEmrgVehicleTimeLoss= 42.21472222222222
-	averageEmrgVehicleDuration= 63.888888888888886
-	averageFloodedWaitingTime= 24.265033407572382
-	averageFloodedTimeLoss= 31.28498886414254
-	averageEmrgVehicleWaitingTime= 32.138888888888886
-	averageEmrgVehicleTimeLoss= 42.21472222222222
-	averageEmrgVehicleDuration= 63.888888888888886
-	averageVehicleWaitingTime= 25.186942675159237
-	averageVehicleTimeLoss= 35.153898089171925
-	averageVehicleDuration= 54.513057324840766
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 42.79190382081685
-	averagePersonDuration= 155.8227931488801
-
-**Simulation Parameters**
-	RunAdaptation= 1
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 0
-	FloodingPriorization= 3
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 0.0
-	WeatherVariationFactor= 0.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '459.01', '-E1_2': '392.55', '-E2_0': None, '-E2_1': '333.25', '-E2_2': '551.37', '-E3_0': None, '-E3_1': '463.18', '-E3_2': '382.98', '-E4_0': None, '-E4_1': '364.33', '-E4_2': '457.19', 'E1_0': None, 'E1_1': '10062.83', 'E1_2': '17294.29', 'E2_0': None, 'E2_1': '9156.48', 'E2_2': '17252.39', 'E3_0': None, 'E3_1': '8608.33', 'E3_2': '14783.76', 'E4_0': None, 'E4_1': '9855.60', 'E4_2': '17752.56'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '7511.00', 'E1_2': '13681.00', 'E2_0': None, 'E2_1': '6020.00', 'E2_2': '13973.00', 'E3_0': None, 'E3_1': '5561.00', 'E3_2': '11493.00', 'E4_0': None, 'E4_1': '6590.00', 'E4_2': '14133.00'}
-	floodedWaitingTimeMap= {'E1_1': '7511.00', 'E1_2': '13681.00', 'E3_2': '11493.00'}
-	totalWaitingTime= 78962.0
-	totalFloodedWaitingTime= 32685.0
-	floodedTimeLossMap= {'E1_1': '10062.83', 'E1_2': '17294.29', 'E3_2': '14783.76'}
-	totalTimeLoss= 108170.1
-	totalFloodedTimeLoss= 42140.880000000005
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123629_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123629_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123629_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:38:18 ****
-**Comparative Metrics**
-	WeightedTimeLoss= 34.573355517389466
-	WeightedDuration= 80.59918419922714
-	WeightedWaitingTime= 14.683340489480464
-	averageCO2Emission= 118539.1015371353
-	averageFuelUse= 38422.821251171394
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 29.97222222222222
-	averageEmrgVehicleTimeLoss= 39.574166666666656
-	averageEmrgVehicleDuration= 53.02777777777778
-	averageFloodedWaitingTime= 0.0
-	averageFloodedTimeLoss= 0.0
-	averageEmrgVehicleWaitingTime= 29.97222222222222
-	averageEmrgVehicleTimeLoss= 39.574166666666656
-	averageEmrgVehicleDuration= 53.02777777777778
-	averageVehicleWaitingTime= 21.78184713375796
-	averageVehicleTimeLoss= 31.326299363057377
-	averageVehicleDuration= 44.95923566878981
-	averagePersonWaitingTime= 0.0
-	averagePersonTimeLoss= 41.28992753623188
-	averagePersonDuration= 154.32081686429513
-
-**Simulation Parameters**
-	RunAdaptation= 0
-	VehiclesPerSecondInbalance= 0.0
-	trafficImbalanceFactor= 0
-	trafficImbalanceFrequency= 20
-	EmergencyVehiclePriorization= 0
-	FloodingPriorization= 0
-	WeatherPriorization= 0
-
-**Simulation Data**
-	WeatherVariance= 100.0
-	WeatherVariationFactor= 1.0
-	timeLossMap= {'-E1_0': None, '-E1_1': '445.10', '-E1_2': '421.03', '-E2_0': None, '-E2_1': '304.86', '-E2_2': '562.87', '-E3_0': None, '-E3_1': '432.83', '-E3_2': '411.10', '-E4_0': None, '-E4_1': '311.77', '-E4_2': '488.74', 'E1_0': None, 'E1_1': '9858.57', 'E1_2': '15641.69', 'E2_0': None, 'E2_1': '9132.13', 'E2_2': '13788.93', 'E3_0': None, 'E3_1': '8876.43', 'E3_2': '12708.25', 'E4_0': None, 'E4_1': '8788.96', 'E4_2': '14239.69'}
-	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6785.00', 'E1_2': '12186.00', 'E2_0': None, 'E2_1': '6034.00', 'E2_2': '10883.00', 'E3_0': None, 'E3_1': '5997.00', 'E3_2': '9610.00', 'E4_0': None, 'E4_1': '5599.00', 'E4_2': '11138.00'}
-	floodedWaitingTimeMap= {}
-	totalWaitingTime= 68232.0
-	totalFloodedWaitingTime= 0
-	floodedTimeLossMap= {}
-	totalTimeLoss= 96412.95
-	totalFloodedTimeLoss= 0
-	EmrgVehicleCount= 36
-	vehiclesCount= 3140
-	personsCount= 1518
-
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123818_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123818_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123818_tripinfo_log.xml
---------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:38:40 ****
+**** Simulation Results from 24/07/2025 at 14:47:33 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 32.82341133533704
 	WeightedDuration= 78.86732503220266
@@ -2697,11 +2136,572 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123818_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123840_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123840_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123840_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144733_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144733_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144733_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:40:06 ****
+**** Simulation Results from 24/07/2025 at 14:49:02 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 34.573355517389466
+	WeightedDuration= 80.59918419922714
+	WeightedWaitingTime= 14.683340489480464
+	averageCO2Emission= 118539.1015371353
+	averageFuelUse= 38422.821251171394
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 29.97222222222222
+	averageEmrgVehicleTimeLoss= 39.574166666666656
+	averageEmrgVehicleDuration= 53.02777777777778
+	averageFloodedWaitingTime= 0.0
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 29.97222222222222
+	averageEmrgVehicleTimeLoss= 39.574166666666656
+	averageEmrgVehicleDuration= 53.02777777777778
+	averageVehicleWaitingTime= 21.78184713375796
+	averageVehicleTimeLoss= 31.326299363057377
+	averageVehicleDuration= 44.95923566878981
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 41.28992753623188
+	averagePersonDuration= 154.32081686429513
+
+**Simulation Parameters**
+	RunAdaptation= 0
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 0
+	FloodingPriorization= 0
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '445.10', '-E1_2': '421.03', '-E2_0': None, '-E2_1': '304.86', '-E2_2': '562.87', '-E3_0': None, '-E3_1': '432.83', '-E3_2': '411.10', '-E4_0': None, '-E4_1': '311.77', '-E4_2': '488.74', 'E1_0': None, 'E1_1': '9858.57', 'E1_2': '15641.69', 'E2_0': None, 'E2_1': '9132.13', 'E2_2': '13788.93', 'E3_0': None, 'E3_1': '8876.43', 'E3_2': '12708.25', 'E4_0': None, 'E4_1': '8788.96', 'E4_2': '14239.69'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6785.00', 'E1_2': '12186.00', 'E2_0': None, 'E2_1': '6034.00', 'E2_2': '10883.00', 'E3_0': None, 'E3_1': '5997.00', 'E3_2': '9610.00', 'E4_0': None, 'E4_1': '5599.00', 'E4_2': '11138.00'}
+	floodedWaitingTimeMap= {}
+	totalWaitingTime= 68232.0
+	totalFloodedWaitingTime= 0
+	floodedTimeLossMap= {}
+	totalTimeLoss= 96412.95
+	totalFloodedTimeLoss= 0
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144902_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144902_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144902_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:49:27 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 35.39904250751391
+	WeightedDuration= 81.4237870330614
+	WeightedWaitingTime= 15.100472305710605
+	averageCO2Emission= 119604.4075424385
+	averageFuelUse= 38768.71893415476
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageFloodedWaitingTime= 0.0
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageVehicleWaitingTime= 22.40063694267516
+	averageVehicleTimeLoss= 32.071856687898034
+	averageVehicleDuration= 45.7031847133758
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 42.28136363636362
+	averagePersonDuration= 155.31225296442688
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 1
+	FloodingPriorization= 0
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
+	floodedWaitingTimeMap= {}
+	totalWaitingTime= 70216.0
+	totalFloodedWaitingTime= 0
+	floodedTimeLossMap= {}
+	totalTimeLoss= 98822.42
+	totalFloodedTimeLoss= 0
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144927_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144927_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_144927_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:50:01 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 35.39904250751391
+	WeightedDuration= 81.4237870330614
+	WeightedWaitingTime= 15.100472305710605
+	averageCO2Emission= 119604.4075424385
+	averageFuelUse= 38768.71893415476
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageFloodedWaitingTime= 0.0
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageVehicleWaitingTime= 22.40063694267516
+	averageVehicleTimeLoss= 32.071856687898034
+	averageVehicleDuration= 45.7031847133758
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 42.28136363636362
+	averagePersonDuration= 155.31225296442688
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 2
+	FloodingPriorization= 0
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
+	floodedWaitingTimeMap= {}
+	totalWaitingTime= 70216.0
+	totalFloodedWaitingTime= 0
+	floodedTimeLossMap= {}
+	totalTimeLoss= 98822.42
+	totalFloodedTimeLoss= 0
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145001_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145001_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145001_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:50:39 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 35.39904250751391
+	WeightedDuration= 81.4237870330614
+	WeightedWaitingTime= 15.100472305710605
+	averageCO2Emission= 119604.4075424385
+	averageFuelUse= 38768.71893415476
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageFloodedWaitingTime= 0.0
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageVehicleWaitingTime= 22.40063694267516
+	averageVehicleTimeLoss= 32.071856687898034
+	averageVehicleDuration= 45.7031847133758
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 42.28136363636362
+	averagePersonDuration= 155.31225296442688
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 3
+	FloodingPriorization= 0
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
+	floodedWaitingTimeMap= {}
+	totalWaitingTime= 70216.0
+	totalFloodedWaitingTime= 0
+	floodedTimeLossMap= {}
+	totalTimeLoss= 98822.42
+	totalFloodedTimeLoss= 0
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145039_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145039_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145039_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:51:18 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 35.39904250751391
+	WeightedDuration= 81.4237870330614
+	WeightedWaitingTime= 15.100472305710605
+	averageCO2Emission= 119604.4075424385
+	averageFuelUse= 38768.71893415476
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageFloodedWaitingTime= 0.0
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 22.47222222222222
+	averageEmrgVehicleTimeLoss= 32.043055555555554
+	averageEmrgVehicleDuration= 45.52777777777778
+	averageVehicleWaitingTime= 22.40063694267516
+	averageVehicleTimeLoss= 32.071856687898034
+	averageVehicleDuration= 45.7031847133758
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 42.28136363636362
+	averagePersonDuration= 155.31225296442688
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 5
+	FloodingPriorization= 0
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '466.80', '-E1_2': '404.20', '-E2_0': None, '-E2_1': '322.92', '-E2_2': '535.62', '-E3_0': None, '-E3_1': '425.17', '-E3_2': '428.51', '-E4_0': None, '-E4_1': '291.51', '-E4_2': '492.78', 'E1_0': None, 'E1_1': '9231.82', 'E1_2': '15571.88', 'E2_0': None, 'E2_1': '8910.18', 'E2_2': '14414.69', 'E3_0': None, 'E3_1': '9040.35', 'E3_2': '13665.67', 'E4_0': None, 'E4_1': '9155.57', 'E4_2': '15464.75'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6205.00', 'E1_2': '12017.00', 'E2_0': None, 'E2_1': '5872.00', 'E2_2': '11419.00', 'E3_0': None, 'E3_1': '6105.00', 'E3_2': '10481.00', 'E4_0': None, 'E4_1': '6008.00', 'E4_2': '12109.00'}
+	floodedWaitingTimeMap= {}
+	totalWaitingTime= 70216.0
+	totalFloodedWaitingTime= 0
+	floodedTimeLossMap= {}
+	totalTimeLoss= 98822.42
+	totalFloodedTimeLoss= 0
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145118_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145118_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145118_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:51:55 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 36.37043366251612
+	WeightedDuration= 86.28424216401889
+	WeightedWaitingTime= 16.35895234006011
+	averageCO2Emission= 121734.18559375216
+	averageFuelUse= 39458.66562686969
+	averageFloodedTimeLoss= 33.507847633136095
+	averageEmrgVehicleWaitingTime= 32.611111111111114
+	averageEmrgVehicleTimeLoss= 42.72222222222222
+	averageEmrgVehicleDuration= 64.52777777777777
+	averageFloodedWaitingTime= 26.361686390532544
+	averageFloodedTimeLoss= 33.507847633136095
+	averageEmrgVehicleWaitingTime= 32.611111111111114
+	averageEmrgVehicleTimeLoss= 42.72222222222222
+	averageEmrgVehicleDuration= 64.52777777777777
+	averageVehicleWaitingTime= 24.26751592356688
+	averageVehicleTimeLoss= 33.940563694267546
+	averageVehicleDuration= 53.341082802547774
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 41.39664690382081
+	averagePersonDuration= 154.42753623188406
+
+**Simulation Parameters**
+	RunAdaptation= 0
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 0
+	FloodingPriorization= 0
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '448.95', '-E1_2': '398.54', '-E2_0': None, '-E2_1': '341.12', '-E2_2': '518.05', '-E3_0': None, '-E3_1': '427.25', '-E3_2': '404.10', '-E4_0': None, '-E4_1': '359.50', '-E4_2': '431.38', 'E1_0': None, 'E1_1': '10808.84', 'E1_2': '19163.33', 'E2_0': None, 'E2_1': '9214.06', 'E2_2': '13695.93', 'E3_0': None, 'E3_1': '9810.52', 'E3_2': '15330.44', 'E4_0': None, 'E4_1': '8853.81', 'E4_2': '14207.70'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '8226.00', 'E1_2': '15399.00', 'E2_0': None, 'E2_1': '6119.00', 'E2_2': '10782.00', 'E3_0': None, 'E3_1': '6798.00', 'E3_2': '12016.00', 'E4_0': None, 'E4_1': '5648.00', 'E4_2': '11097.00'}
+	floodedWaitingTimeMap= {'E1_1': '8226.00', 'E1_2': '15399.00', 'E3_2': '12016.00'}
+	totalWaitingTime= 76085.0
+	totalFloodedWaitingTime= 35641.0
+	floodedTimeLossMap= {'E1_1': '10808.84', 'E1_2': '19163.33', 'E3_2': '15330.44'}
+	totalTimeLoss= 104413.52
+	totalFloodedTimeLoss= 45302.61
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145155_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145155_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145155_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:52:22 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 36.096975096608006
+	WeightedDuration= 85.99849720910262
+	WeightedWaitingTime= 15.750966079862602
+	averageCO2Emission= 120516.67173362948
+	averageFuelUse= 39064.253417495245
+	averageFloodedTimeLoss= 29.300674486803523
+	averageEmrgVehicleWaitingTime= 29.72222222222222
+	averageEmrgVehicleTimeLoss= 39.27416666666667
+	averageEmrgVehicleDuration= 61.0
+	averageFloodedWaitingTime= 22.48973607038123
+	averageFloodedTimeLoss= 29.300674486803523
+	averageEmrgVehicleWaitingTime= 29.72222222222222
+	averageEmrgVehicleTimeLoss= 39.27416666666667
+	averageEmrgVehicleDuration= 61.0
+	averageVehicleWaitingTime= 23.3656050955414
+	averageVehicleTimeLoss= 33.07662420382169
+	averageVehicleDuration= 52.45891719745223
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 42.344604743083
+	averagePersonDuration= 155.37549407114625
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 0
+	FloodingPriorization= 1
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '437.34', '-E1_2': '405.34', '-E2_0': None, '-E2_1': '321.16', '-E2_2': '554.06', '-E3_0': None, '-E3_1': '459.55', '-E3_2': '379.02', '-E4_0': None, '-E4_1': '345.63', '-E4_2': '458.33', 'E1_0': None, 'E1_1': '9951.56', 'E1_2': '15469.78', 'E2_0': None, 'E2_1': '8310.00', 'E2_2': '15197.07', 'E3_0': None, 'E3_1': '9080.54', 'E3_2': '14544.78', 'E4_0': None, 'E4_1': '9757.13', 'E4_2': '15982.41'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '7444.00', 'E1_2': '11890.00', 'E2_0': None, 'E2_1': '5236.00', 'E2_2': '12102.00', 'E3_0': None, 'E3_1': '6057.00', 'E3_2': '11342.00', 'E4_0': None, 'E4_1': '6562.00', 'E4_2': '12621.00'}
+	floodedWaitingTimeMap= {'E1_1': '7444.00', 'E1_2': '11890.00', 'E3_2': '11342.00'}
+	totalWaitingTime= 73254.0
+	totalFloodedWaitingTime= 30676.0
+	floodedTimeLossMap= {'E1_1': '9951.56', 'E1_2': '15469.78', 'E3_2': '14544.78'}
+	totalTimeLoss= 101653.7
+	totalFloodedTimeLoss= 39966.12
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145222_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145222_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145222_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:54:15 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 36.99155216831262
+	WeightedDuration= 86.86904250751395
+	WeightedWaitingTime= 16.139544869042506
+	averageCO2Emission= 121436.33266119732
+	averageFuelUse= 39362.48653768914
+	averageFloodedTimeLoss= 29.184329896907215
+	averageEmrgVehicleWaitingTime= 28.0
+	averageEmrgVehicleTimeLoss= 37.42611111111111
+	averageEmrgVehicleDuration= 59.111111111111114
+	averageFloodedWaitingTime= 22.33357879234168
+	averageFloodedTimeLoss= 29.184329896907215
+	averageEmrgVehicleWaitingTime= 28.0
+	averageEmrgVehicleTimeLoss= 37.42611111111111
+	averageEmrgVehicleDuration= 59.111111111111114
+	averageVehicleWaitingTime= 23.94203821656051
+	averageVehicleTimeLoss= 33.76386624203829
+	averageVehicleDuration= 53.11050955414013
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 43.668056653491426
+	averagePersonDuration= 156.6989459815547
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 0
+	FloodingPriorization= 2
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '469.98', '-E1_2': '374.31', '-E2_0': None, '-E2_1': '352.41', '-E2_2': '529.95', '-E3_0': None, '-E3_1': '470.11', '-E3_2': '365.84', '-E4_0': None, '-E4_1': '350.90', '-E4_2': '451.40', 'E1_0': None, 'E1_1': '8896.71', 'E1_2': '15588.92', 'E2_0': None, 'E2_1': '8209.32', 'E2_2': '16638.09', 'E3_0': None, 'E3_1': '8809.31', 'E3_2': '15146.69', 'E4_0': None, 'E4_1': '9845.42', 'E4_2': '17379.57'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6343.00', 'E1_2': '12146.00', 'E2_0': None, 'E2_1': '5129.00', 'E2_2': '13385.00', 'E3_0': None, 'E3_1': '5756.00', 'E3_2': '11840.00', 'E4_0': None, 'E4_1': '6601.00', 'E4_2': '13881.00'}
+	floodedWaitingTimeMap= {'E1_1': '6343.00', 'E1_2': '12146.00', 'E3_2': '11840.00'}
+	totalWaitingTime= 75081.0
+	totalFloodedWaitingTime= 30329.0
+	floodedTimeLossMap= {'E1_1': '8896.71', 'E1_2': '15588.92', 'E3_2': '15146.69'}
+	totalTimeLoss= 103878.93
+	totalFloodedTimeLoss= 39632.32
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145415_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145415_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145415_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:56:04 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 37.64305495920993
+	WeightedDuration= 87.52898239587806
+	WeightedWaitingTime= 16.978746243022755
+	averageCO2Emission= 123584.35337771925
+	averageFuelUse= 40058.601051355756
+	averageFloodedTimeLoss= 31.28498886414254
+	averageEmrgVehicleWaitingTime= 32.138888888888886
+	averageEmrgVehicleTimeLoss= 42.21472222222222
+	averageEmrgVehicleDuration= 63.888888888888886
+	averageFloodedWaitingTime= 24.265033407572382
+	averageFloodedTimeLoss= 31.28498886414254
+	averageEmrgVehicleWaitingTime= 32.138888888888886
+	averageEmrgVehicleTimeLoss= 42.21472222222222
+	averageEmrgVehicleDuration= 63.888888888888886
+	averageVehicleWaitingTime= 25.186942675159237
+	averageVehicleTimeLoss= 35.153898089171925
+	averageVehicleDuration= 54.513057324840766
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 42.79190382081685
+	averagePersonDuration= 155.8227931488801
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 0
+	FloodingPriorization= 3
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 0.0
+	WeatherVariationFactor= 0.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '459.01', '-E1_2': '392.55', '-E2_0': None, '-E2_1': '333.25', '-E2_2': '551.37', '-E3_0': None, '-E3_1': '463.18', '-E3_2': '382.98', '-E4_0': None, '-E4_1': '364.33', '-E4_2': '457.19', 'E1_0': None, 'E1_1': '10062.83', 'E1_2': '17294.29', 'E2_0': None, 'E2_1': '9156.48', 'E2_2': '17252.39', 'E3_0': None, 'E3_1': '8608.33', 'E3_2': '14783.76', 'E4_0': None, 'E4_1': '9855.60', 'E4_2': '17752.56'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '7511.00', 'E1_2': '13681.00', 'E2_0': None, 'E2_1': '6020.00', 'E2_2': '13973.00', 'E3_0': None, 'E3_1': '5561.00', 'E3_2': '11493.00', 'E4_0': None, 'E4_1': '6590.00', 'E4_2': '14133.00'}
+	floodedWaitingTimeMap= {'E1_1': '7511.00', 'E1_2': '13681.00', 'E3_2': '11493.00'}
+	totalWaitingTime= 78962.0
+	totalFloodedWaitingTime= 32685.0
+	floodedTimeLossMap= {'E1_1': '10062.83', 'E1_2': '17294.29', 'E3_2': '14783.76'}
+	totalTimeLoss= 108170.1
+	totalFloodedTimeLoss= 42140.880000000005
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145604_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145604_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145604_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:58:00 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 34.573355517389466
+	WeightedDuration= 80.59918419922714
+	WeightedWaitingTime= 14.683340489480464
+	averageCO2Emission= 118539.1015371353
+	averageFuelUse= 38422.821251171394
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 29.97222222222222
+	averageEmrgVehicleTimeLoss= 39.574166666666656
+	averageEmrgVehicleDuration= 53.02777777777778
+	averageFloodedWaitingTime= 0.0
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 29.97222222222222
+	averageEmrgVehicleTimeLoss= 39.574166666666656
+	averageEmrgVehicleDuration= 53.02777777777778
+	averageVehicleWaitingTime= 21.78184713375796
+	averageVehicleTimeLoss= 31.326299363057377
+	averageVehicleDuration= 44.95923566878981
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 41.28992753623188
+	averagePersonDuration= 154.32081686429513
+
+**Simulation Parameters**
+	RunAdaptation= 0
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 0
+	FloodingPriorization= 0
+	WeatherPriorization= 0
+
+**Simulation Data**
+	WeatherVariance= 100.0
+	WeatherVariationFactor= 1.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '445.10', '-E1_2': '421.03', '-E2_0': None, '-E2_1': '304.86', '-E2_2': '562.87', '-E3_0': None, '-E3_1': '432.83', '-E3_2': '411.10', '-E4_0': None, '-E4_1': '311.77', '-E4_2': '488.74', 'E1_0': None, 'E1_1': '9858.57', 'E1_2': '15641.69', 'E2_0': None, 'E2_1': '9132.13', 'E2_2': '13788.93', 'E3_0': None, 'E3_1': '8876.43', 'E3_2': '12708.25', 'E4_0': None, 'E4_1': '8788.96', 'E4_2': '14239.69'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '6785.00', 'E1_2': '12186.00', 'E2_0': None, 'E2_1': '6034.00', 'E2_2': '10883.00', 'E3_0': None, 'E3_1': '5997.00', 'E3_2': '9610.00', 'E4_0': None, 'E4_1': '5599.00', 'E4_2': '11138.00'}
+	floodedWaitingTimeMap= {}
+	totalWaitingTime= 68232.0
+	totalFloodedWaitingTime= 0
+	floodedTimeLossMap= {}
+	totalTimeLoss= 96412.95
+	totalFloodedTimeLoss= 0
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145800_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145800_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145800_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:58:23 ****
+**Comparative Metrics**
+	WeightedTimeLoss= 32.82341133533704
+	WeightedDuration= 78.86732503220266
+	WeightedWaitingTime= 14.342851009016746
+	averageCO2Emission= 117602.38546042748
+	averageFuelUse= 38119.70229520858
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 21.97222222222222
+	averageEmrgVehicleTimeLoss= 31.69472222222223
+	averageEmrgVehicleDuration= 45.138888888888886
+	averageFloodedWaitingTime= 0.0
+	averageFloodedTimeLoss= 0.0
+	averageEmrgVehicleWaitingTime= 21.97222222222222
+	averageEmrgVehicleTimeLoss= 31.69472222222223
+	averageEmrgVehicleDuration= 45.138888888888886
+	averageVehicleWaitingTime= 21.27675159235669
+	averageVehicleTimeLoss= 30.846286624203803
+	averageVehicleDuration= 44.50605095541401
+	averagePersonWaitingTime= 0.0
+	averagePersonTimeLoss= 36.91311594202899
+	averagePersonDuration= 149.94400527009222
+
+**Simulation Parameters**
+	RunAdaptation= 1
+	VehiclesPerSecondInbalance= 0.0
+	trafficImbalanceFactor= 0
+	trafficImbalanceFrequency= 20
+	EmergencyVehiclePriorization= 0
+	FloodingPriorization= 0
+	WeatherPriorization= 1
+
+**Simulation Data**
+	WeatherVariance= 100.0
+	WeatherVariationFactor= 1.0
+	timeLossMap= {'-E1_0': None, '-E1_1': '406.14', '-E1_2': '459.49', '-E2_0': None, '-E2_1': '235.42', '-E2_2': '615.73', '-E3_0': None, '-E3_1': '378.65', '-E3_2': '450.42', '-E4_0': None, '-E4_1': '246.21', '-E4_2': '528.11', 'E1_0': None, 'E1_1': '11177.66', 'E1_2': '11577.07', 'E2_0': None, 'E2_1': '10361.52', 'E2_2': '12049.98', 'E3_0': None, 'E3_1': '10485.92', 'E3_2': '11921.97', 'E4_0': None, 'E4_1': '10633.17', 'E4_2': '13230.30'}
+	waitingTimeMap= {'-E1_0': None, '-E1_1': '0.00', '-E1_2': '0.00', '-E2_0': None, '-E2_1': '0.00', '-E2_2': '0.00', '-E3_0': None, '-E3_1': '0.00', '-E3_2': '0.00', '-E4_0': None, '-E4_1': '0.00', '-E4_2': '0.00', 'E1_0': None, 'E1_1': '8092.00', 'E1_2': '8328.00', 'E2_0': None, 'E2_1': '7257.00', 'E2_2': '9248.00', 'E3_0': None, 'E3_1': '7567.00', 'E3_2': '8808.00', 'E4_0': None, 'E4_1': '7360.00', 'E4_2': '9958.00'}
+	floodedWaitingTimeMap= {}
+	totalWaitingTime= 66618.0
+	totalFloodedWaitingTime= 0
+	floodedTimeLossMap= {}
+	totalTimeLoss= 94757.76
+	totalFloodedTimeLoss= 0
+	EmrgVehicleCount= 36
+	vehiclesCount= 3140
+	personsCount= 1518
+
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145823_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145823_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145823_tripinfo_log.xml
+--------------------------------------------------------
+**** Simulation Results from 24/07/2025 at 14:59:53 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 32.67401889222844
 	WeightedDuration= 78.71983683984543
@@ -2748,11 +2748,11 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_123840_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_124006_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_124006_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_124006_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145953_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145953_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_145953_tripinfo_log.xml
 --------------------------------------------------------
-**** Simulation Results from 20/07/2025 at 12:41:29 ****
+**** Simulation Results from 24/07/2025 at 15:01:17 ****
 **Comparative Metrics**
 	WeightedTimeLoss= 32.61134177758693
 	WeightedDuration= 78.6507084585659
@@ -2799,7 +2799,7 @@ Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_124006_tripinfo_
 	vehiclesCount= 3140
 	personsCount= 1518
 
-Full Metrics at: sumo_simulation/sumo_elements/metrics/20250720_124129_metrics.log
-LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250720_124129_lanedata.xml
-Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250720_124129_tripinfo_log.xml
+Full Metrics at: sumo_simulation/sumo_elements/metrics/20250724_150117_metrics.log
+LaneArea Metrics at: sumo_simulation/sumo_elements/metrics/20250724_150117_lanedata.xml
+Trip Metrics at: sumo_simulation/sumo_elements/metrics/20250724_150117_tripinfo_log.xml
 --------------------------------------------------------
