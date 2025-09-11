@@ -3,3 +3,11 @@ __pycache__/
 
 #ignore outputfiles
 sumo_simulation/sumo_elements/e2_output/*
+
+#ignore video data
+video_detection/data/*
+
+#ignore yolo model
+video_detection/yolo_model/*
+
+output.*
