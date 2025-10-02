@@ -1,21 +1,21 @@
 import copy
 import cv2
 import time
+import numpy as np
 
 def getHitBoxPolygonFromVideo(video : str):
     # p = pause
-    # n = next frame
+    # f = finish
     # u = undo
     # q = quit
-    hitboxCoordinates = {1:[]}
-    framecount = 1
+    hitboxCoordinates = []
     update = [False]
+    STOPPED = False
 
     def mouse_callback(event, x, y, flags, param):
-        update[0] = False
-        if event == cv2.EVENT_RBUTTONDBLCLK or event == cv2.EVENT_LBUTTONDBLCLK or event == cv2.EVENT_RBUTTONDOWN:
-            hitboxCoordinates[framecount].append((x, y))
-            print(hitboxCoordinates)
+        if STOPPED and event == cv2.EVENT_RBUTTONDBLCLK or event == cv2.EVENT_LBUTTONDBLCLK or event == cv2.EVENT_RBUTTONDOWN:
+            update[0] = True
+            hitboxCoordinates.append((x, y))
 
     video = cv2.VideoCapture(video)
 
@@ -26,27 +26,34 @@ def getHitBoxPolygonFromVideo(video : str):
             if not ret: break
             cv2.imshow("video", frame)
             cv2.setMouseCallback("video", mouse_callback)
-            if cv2.waitKey(1) == ord('p'): 
-                while True:
-                    time.sleep(0.5)
-                    if cv2.waitKey() == ord('n'):
-                        framecount += 1;hitboxCoordinates[framecount] = []
-                        frame = copy.deepcopy(original_frame);update[0] = False
-                    elif cv2.waitKey() == ord('u'):
-                        if len(hitboxCoordinates[framecount]) > 0: hitboxCoordinates[framecount].pop()
-                        frame = copy.deepcopy(original_frame);update[0] = False
-                        print(hitboxCoordinates)
-                    elif cv2.waitKey() == ord('p'):
-                        update[0] = False
-                        break
-                    if not update[0]:
-                        cv2.putText(frame, "STOPED (p) - Frame " + str(framecount), (30, 60), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255), 3, cv2.LINE_AA)
-                        for i in hitboxCoordinates[framecount]: # dot all points
-                            cv2.putText(frame, ".", i, cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 3, cv2.LINE_AA)
-                        for i in range(len(hitboxCoordinates[framecount])//2): # create rectangles
-                            frame = cv2.rectangle(frame, hitboxCoordinates[framecount][i*2], hitboxCoordinates[framecount][i*2 + 1], (0,255,0), 3)
-                        update[0] = True
-                    cv2.imshow("video", frame)
+            while STOPPED:
+                if cv2.waitKey(1) == ord('u'): #remove last dot
+                    if len(hitboxCoordinates) > 0: hitboxCoordinates.pop()
+                    frame = copy.deepcopy(original_frame);update[0] = True
+                if cv2.waitKey(1) == ord('f'): #finish
+                    print("Coordinates:", hitboxCoordinates)
+                    hitboxCoordinates.clear()
+                    break
+                if cv2.waitKey(1) == ord('p'): #unpause
+                    STOPPED = False
+                    hitboxCoordinates.clear()
+                    break
+                if update[0]: #update[0] dots
+                    frame = copy.deepcopy(original_frame)
+                    cv2.putText(frame, "STOPED (p)", (30, 60), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255), 3, cv2.LINE_AA)
+                    for i in hitboxCoordinates: # dot all points
+                        cv2.putText(frame, ".", i, cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 3, cv2.LINE_AA)
+                    if len(hitboxCoordinates) > 2: 
+                        shapes = np.zeros_like(frame, np.uint8)
+                        cv2.fillPoly(shapes, [np.array(list(map(list, hitboxCoordinates)), np.int32)], (0, 255, 0))
+                        alpha = 0.3
+                        mask = shapes.astype(bool)
+                        frame[mask] = cv2.addWeighted(frame, alpha, shapes, 1 - alpha, 0)[mask]
+                    update[0] = False
+                cv2.imshow("video", frame)
+            #endwhile
+            if cv2.waitKey(1) == ord('p'):
+                STOPPED = True
             if cv2.waitKey(1) == ord('q'):
                 break
     else: 
