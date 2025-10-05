@@ -21,7 +21,7 @@ class ObjectsTracker:
         self._dist_thresh = DIST_THRESH
         self._trackedAreaPolygon = TrackedAreaPolygon
         self._trackedClasses = TrackedClasses
-        self._starting_time,self._ending_time = 0.0,0.0 #in seconds
+        self._starting_time,self._ending_time =  time.time(),0.0 #in seconds
         self._objects_ids_count,self._queuedObjectsCount = 0,0
         self._objects_center = {}
         self._queue_in,self._queue_out,self._last_ids_in = set(),set(),set()
@@ -43,11 +43,11 @@ class ObjectsTracker:
 
     def getQueueArrivalRate(self) -> float:
         self._ending_time = time.time()
-        return self._queue_in/(self._ending_time - self._starting_time)
+        return float(len(self._queue_in))/(self._ending_time - self._starting_time)
 
     def getQueueDepartureRate(self) -> float:
         self._ending_time = time.time()
-        return self._queue_out/(self._ending_time - self._starting_time)
+        return float(len(self._queue_out))/(self._ending_time - self._starting_time)
 
     def updateQueuedObjects(self, objects_boxes) -> int:
         self._queuedObjectsCount = 0
@@ -58,6 +58,7 @@ class ObjectsTracker:
         return self._queuedObjectsCount
 
     def updateTracking(self, objects_boxes, trackedArea = None) -> list[Object]:
+        self.updateQueuedObjects(objects_boxes)
         if trackedArea is None: trackedArea = self._trackedAreaPolygon #default
         objects_data = []
         for obj in objects_boxes: # for each object detected
@@ -94,13 +95,13 @@ class ObjectsTracker:
 
 class VehiclesTracker(ObjectsTracker):
     def __init__(self, trackedArea, leavingArea, arrivingArea, CONF_THRESH = 0.55, DIST_THRESH = 120):
-        super().__init__(trackedArea, ['car', 'bus', 'truck'], CONF_THRESH, DIST_THRESH)
+        super().__init__(trackedArea, ['car', 'bus', 'truck', 'motorcycle'], CONF_THRESH, DIST_THRESH)
         self._leavingArea = leavingArea
         self._arrivingArea = arrivingArea
         self._queue_2_in,self._queue_2_out,self._last_ids_2_in = set(),set(),set()
 
-    def getLeavingCount(self) -> int: return self._queue_in
-    def getArrivingCount(self) -> int: return self._queue_2_in
+    def getLeavingCount(self) -> int: return len(self._queue_in)
+    def getArrivingCount(self) -> int: return len(self._queue_2_in)
 
     def resetCouting(self) -> None:
         super.resetCouting()
@@ -113,16 +114,15 @@ class VehiclesTracker(ObjectsTracker):
 
     def getQueue2ArrivalRate(self) -> float:
         self._ending_time = time.time()
-        return self._queue_2_in/(self._ending_time - self._starting_time)
+        return float(len(self._queue_2_in))/(self._ending_time - self._starting_time)
 
     def getQueue2DepartureRate(self) -> float:
         self._ending_time = time.time()
-        return self._queue_2_out/(self._ending_time - self._starting_time)
+        return float(len(self._queue_2_out))/(self._ending_time - self._starting_time)
  
     def updateCouting(self, objects_boxes) -> list[Object]:
         trackedArea = self._leavingArea.union(self._arrivingArea)
         objects_data = self.updateTracking(objects_boxes, trackedArea) #updating objects tracking
-        super().updateQueuedObjects(objects_boxes) #updating queued couting
         ids_in,ids_2_in = set(),set() #list of object's id within tracked area
         ids_out,ids_2_out = set(),set() #list of object's id no longer within tracked area
         for obj in objects_data:

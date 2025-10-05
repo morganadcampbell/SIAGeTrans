@@ -1,6 +1,9 @@
 # ignore cache
 __pycache__/
 
+#ignore configs
+configs/.
+
 #ignore outputfiles
 sumo_simulation/sumo_elements/e2_output/*
 
@@ -10,4 +13,5 @@ video_detection/data/*
 #ignore yolo model
 video_detection/yolo_model/*
 
+#ignore outputs (from tracking simulation)
 output.*
