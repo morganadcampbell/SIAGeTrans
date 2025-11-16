@@ -16,6 +16,15 @@ class Client:
         Client.__subscriber_topic = subscriber_topic
         Client.__publisher_topic = publisher_topic
 
+    def setSecureConnection(client, username, password, ca_certificate, client_certificate, client_key):
+        if not all([username, password, ca_certificate, client_certificate, client_key]): raise Exception(f'Invalid TLS info')
+        client.username_pw_set(username, password)  # setting password
+        client.tls_set(                             # setting tls
+            ca_certs=ca_certificate,
+            certfile=client_certificate,
+            keyfile=client_key
+        )
+
     def connectionCallback(client, userdata, flags, rc):
         if rc == 0:
             print(f'Client {Client.__client_name} started connection to Broker. Client = {client}')

@@ -2,12 +2,6 @@
 from datetime import datetime
 from enum import Enum
 
-class EventType(Enum):
-    FLOODED_ROAD = 1
-    PARTIAL_ROAD_CLOSURE = 2
-    TOTAL_ROAD_CLOSURE = 3
-    ROAD_ACCIDENT = 4
-
 class DatabaseObject:
     def __init__(self, tableName : str, **kwargs):
         self.__tableName = tableName
