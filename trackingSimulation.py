@@ -1,5 +1,6 @@
 import cv2
 import json
+import time
 from ultralytics import YOLO
 from controllers.VideoController import *
 from video_detection.auxiliar.PresetRecognition import *
@@ -8,8 +9,8 @@ from video_detection.auxiliar.PresetRecognition import *
 ######## Adaptation Parameters ############################
 simulationParams = {                                    ###
 'camera_update_rate': 4,                                ### #frames
-'update_rate': 2,                                       ### #frames
-'conf_thresh': 0.45,                                    ###
+'update_rate': 5,                                       ### #frames
+'conf_thresh': 0.6,                                    ###
 'preset_examples': "video_detection/data/presets",      ###
 'desired_classes': [0, 2, 3, 5, 7],                     ### #person, car, motorcycle, bus, truck
 'yolo_model': 'video_detection/yolo_model/yolo11n.pt'   ###
@@ -18,23 +19,35 @@ simulationParams = {                                    ###
 ###########################################################
 
 
-def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams] ):
+def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams], export : bool = False ):
+    log = open('output.log', 'a') # open log file
+
     for i in range(len(tests)):
         print(f'\n **** Running test {i+1}/{len(tests)} ****\n\n')
         t = tests[i]
+
+        #logging simulations parameters
+        log.write(f'############# Teste {i+1}/{len(tests)} #############\n')
+        for k,v in t.items(): log.write(k + ': ' + str(v) + '\n')
 
         # model will be downloaded on the first run
         model = YOLO(t.get('yolo_model'))
         # loading video sample
         cap = cv2.VideoCapture("video_detection/data/video_1min.mp4")
 
+        # setting up output
+        outputvideoname = f'output_test_{int(time.time())}.mp4'
+        log.write(f'Output Video Name: {outputvideoname}\n')
+        if export: output = cv2.VideoWriter(outputvideoname, cv2.VideoWriter_fourcc(*'mp4v'), 20.0, (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH) + 0.5), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT) + 0.5)))
+        else: output = None
+
         # preseting variables
         framecount,confirmation_counter = 0,0
         currentpreset,lastpreset = "1",None
         video_state,status_text = "Searching Preset", ""
-        vtracker,ptracker = None,None
         testing_preset,last_gray_frame,shapes = None,None,None
         orb_detector, reference_descriptors = analyze_presets_reference(t.get('preset_examples')) #loading presets
+        videoController = None
 
         if cap.isOpened():
             # fps = cap.get(cv2.CAP_PROP_FPS) or 30
@@ -50,8 +63,8 @@ def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams] ):
                     if currentpreset is not None and currentpreset != lastpreset:
                         lastpreset = currentpreset
                         shapes = VideoController.drawHitboxMask(frame, hitboxes[currentpreset]) #loading hitboxs
-                        vtracker,ptracker = VehicleTracker(hitboxes[currentpreset].laneArea),PedestrianTracker(hitboxes[currentpreset].sidewalkArea) #setting trackers
-                
+                        videoController = VideoController({'0' : VehicleTracker(hitboxes[currentpreset].laneArea)}, {'0' : PedestrianTracker(hitboxes[currentpreset].sidewalkArea)}) #setting trackers
+
                 if shapes is None and 'Stable' in status_text and currentpreset is not None:
                     shapes = VideoController.drawHitboxMask(frame, hitboxes[currentpreset]) #loading hitboxs
                 elif 'Stable' not in status_text or currentpreset is None:
@@ -66,11 +79,11 @@ def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams] ):
                     classes = result.boxes.cls.int().cpu().tolist()
                     ids = result.boxes.id.int().cpu().tolist()
                     # updating object detection
-                    if framecount % t.get('update_rate') == 0 and video_state == "Preset Set" and vtracker is not None and ptracker is not None:
+                    if framecount % t.get('update_rate') == 0 and video_state == "Preset Set" and videoController.getVehicleTracker('0') is not None and videoController.getPedestrianTracker('0') is not None:
                         pedestrians = {id : box for box,id,cls in zip(boxes,ids,classes) if cls in [0]}
-                        ptracker.updateCouting(pedestrians)
+                        videoController.getPedestrianTracker('0').updateCouting(pedestrians)
                         vehicles = {id : box for box,id,cls in zip(boxes,ids,classes) if cls not in [0]}
-                        vtracker.updateCouting(vehicles)
+                        videoController.getVehicleTracker('0').updateCouting(vehicles)
 
                     # Visualize the result on the frame
                     frame = result.plot()
@@ -79,23 +92,33 @@ def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams] ):
                     mask = shapes.astype(bool)
                     frame[mask] = cv2.addWeighted(frame, 0.3, shapes, 1 - 0.3, 0)[mask]
                 cv2.putText(frame, status_text, (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0) if video_state == "Preset Set" else (0, 0, 255), 2)
-                cv2.putText(frame, "Vehicles In: " + str(vtracker.getEnteringCount()) + " (" + ("{:.2f} veic/s".format(vtracker.getQueueEnteringRate())) + ")" if vtracker else 'n/a', (600,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                cv2.putText(frame, "Vehicles Out: " + str(vtracker.getLeavingCount()) + " (" + ("{:.2f} veic/s".format(vtracker.getQueueLeavingRate())) + ")" if vtracker else 'n/a', (600,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                cv2.putText(frame, "Vehicles Queued: " + str(vtracker.getQueueCount() if vtracker else 'n/a'), (600,120), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                cv2.putText(frame, "Pedestrians In: " + str(ptracker.getEnteringCount()) + " (" + ("{:.2f} veic/s".format(ptracker.getQueueEnteringRate())) + ")" if ptracker else 'n/a', (20,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                cv2.putText(frame, "Pedestrians Out: " + str(ptracker.getLeavingCount()) + " (" + ("{:.2f} veic/s".format(ptracker.getQueueLeavingRate())) + ")" if ptracker else 'n/a', (20,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                cv2.putText(frame, "Pedestrians Queued: " + str(ptracker.getQueueCount() if ptracker else 'n/a'), (20,120), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                if videoController:
+                    phaseData = videoController.getDataFromTracking('0')
+                    cv2.putText(frame, f"Vehicles In: {videoController.getVehicleTracker('0').getEnteringCount()} ( {'{:.2f} veic/s'.format(phaseData['VehiclesEnteringRate'])})", (600,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Vehicles Out: {videoController.getVehicleTracker('0').getLeavingCount()} ( {'{:.2f} veic/s'.format(phaseData['VehiclesLeavingRate'])})", (600,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Vehicles Queued: {phaseData['QueuedVehicles']}", (600,120), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Pedestrians In: {videoController.getPedestrianTracker('0').getEnteringCount()} ({'{:.2f} veic/s'.format(phaseData['PedestriansEnteringRate'])})", (20,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Pedestrians Out: {videoController.getPedestrianTracker('0').getLeavingCount()} ({'{:.2f} veic/s'.format(phaseData['PedestriansLeavingRate'])})", (20,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Pedestrians Queued: {phaseData['QueuedPedestrians']}", (20,120), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"{videoController.getVehicleTracker('0').getEnteringList()}", (20,150), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
                 # Display the annotated frame
                 cv2.imshow("Video", frame)
+                # Recording frame (if setted)
+                if export: output.write(frame)
 
+                
                 # Break the loop if 'q' is pressed
                 if cv2.waitKey(1) & 0xFF == ord("q"):
                     break
 
         # Release the video capture object and close the display window
         cap.release()
+        if export: output.release()
         cv2.destroyAllWindows()
+        log.write('######################################\n\n')
+    
+    log.close() # close log file
 
 
 if __name__ == '__main__':
@@ -105,4 +128,4 @@ if __name__ == '__main__':
         data = json.load(f, object_hook=lambda d: Hitbox(**d))
         hitboxes = {h.preset : h for h in data}
 
-    trackingSimulation(hitboxes)
+    trackingSimulation(hitboxes, [simulationParams], True)

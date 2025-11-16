@@ -1,10 +1,62 @@
 import cv2
-import time
+import pickle
 import numpy as np
-from shapely.geometry import Polygon
+from models.client import Client
+import configs.configs as configs
+from controllers.ObjectTracker import *
 from video_detection.auxiliar.PresetRecognition import *
+from models.DataProvisionStructure import *
+from models.Hitbox import *
 
-class VideoController:    
+class DataProvisionClient(Client):
+    def __init__(self, regionId : int, intersectionId: int):
+        clientConfigs = configs.mqtt_broker_videocontroller_client_config
+        clientConfigs['client_name'] = f"{clientConfigs.get('client_name')}_{intersectionId}" # subscribe as 'VideoController_<id>'
+        clientConfigs['publisher_topic'] = f"/{regionId}{clientConfigs.get('publisher_topic')}" # publish to topic '/<region code>/dataProvision'
+        super().__init__(**clientConfigs)
+
+class VideoController:
+    def __init__(self, vehiclesTrackersPerPhase : dict[VehicleTracker], pedestrianTrackersPerPhase : dict[PedestrianTracker],
+                 regionId : int = None, intersectionId: int = None,
+                 username : str = None, password : str = None, ca_certificate : str = None, client_certificate : str = None, client_key : str = None):
+        self.__vehiclesTrackersPerPhase = vehiclesTrackersPerPhase
+        self.__pedestrianTrackersPerPhase = pedestrianTrackersPerPhase
+        self.__phasesIds = vehiclesTrackersPerPhase.keys()
+        self.__regionId = regionId
+        self.__intersectionId = intersectionId
+        self.__username = username
+        self.__password = password
+        self.__ca_certificate = ca_certificate
+        self.__client_certificate = client_certificate
+        self.__client_key = client_key
+
+    def getVehicleTracker(self, phaseId) -> VehicleTracker: return self.__vehiclesTrackersPerPhase[phaseId]
+    def getPedestrianTracker(self, phaseId) -> PedestrianTracker: return self.__pedestrianTrackersPerPhase[phaseId]
+                
+    def provideData(self):
+        # publish metrics obtained from video
+        dataPerPhase = []
+        for phaseId in self.__phasesIds: dataPerPhase.append(self.getDataFromTracking(phaseId))
+        dataProvisionClient = DataProvisionClient(self.__regionId, self.__intersectionId)
+        dataProvisionClient.setSecureConnection(self.__username,self.__password,self.__ca_certificate,self.__client_certificate,self.__client_key)
+        dataProvisionClient.connectToBroker()
+        pickled_data = pickle.dumps(dataPerPhase)
+        dataProvisionClient.publish(pickled_data)
+        dataProvisionClient.disconnectFromBroker()
+
+    def getDataFromTracking(self, phaseId):
+        d = dict()
+        d['PhaseId'] = phaseId
+        d['QueuedVehicles'] = self.__vehiclesTrackersPerPhase[phaseId].getQueueCount()
+        d['VehiclesEnteringRate'] = self.__vehiclesTrackersPerPhase[phaseId].getQueueEnteringRate()
+        d['VehiclesLeavingRate'] = self.__vehiclesTrackersPerPhase[phaseId].getQueueLeavingRate()
+        d['EmergencyVehicles'] = self.__vehiclesTrackersPerPhase[phaseId].getQueuedEmergencyVehicles()
+        d['QueuedPedestrians'] = self.__pedestrianTrackersPerPhase[phaseId].getQueueCount()
+        d['PedestriansEnteringRate'] = self.__pedestrianTrackersPerPhase[phaseId].getQueueEnteringRate()
+        d['PedestriansLeavingRate'] = self.__pedestrianTrackersPerPhase[phaseId].getQueueLeavingRate()
+        return DataProvisionStructure(**d)
+
+    @staticmethod
     def drawHitboxMask(frame, hitbox):
         shapes = np.zeros_like(frame, np.uint8) # Initialize blank mask image of same dimensions for drawing the shapes
         cv2.fillPoly(shapes, [np.array(hitbox.laneArea, np.int32)], (0, 0, 255))
@@ -12,6 +64,7 @@ class VideoController:
             cv2.fillPoly(shapes, [np.array(p, np.int32)], (0, 255, 0))
         return shapes
     
+    @staticmethod
     def getCameraState(frame, last_gray_frame, orb_detector, reference_descriptors, video_state, currentpreset, testing_preset, confirmation_counter):
         processing_frame = cv2.resize(frame, (PROCESSING_WIDTH, PROCESSING_HEIGHT))
         gray_frame = cv2.cvtColor(processing_frame, cv2.COLOR_BGR2GRAY)
@@ -38,52 +91,3 @@ class VideoController:
             )
         return last_gray_frame, video_state, currentpreset, testing_preset, status_text, confirmation_counter
 
-
-
-class ObjectsTracker:
-    def __init__(self):
-        self.trackedAreaPolygons = []
-        self._starting_time,self._ending_time =  time.time(),0.0 #in seconds
-        self._queued,self._queue_in,self._queue_out,self._last_queued = set(),set(),set(),set()
-    
-    # @classmethod
-    def getObjectPolygon(self, x, y, w, h): return Polygon([(x,y), (x+w, y), (x+w, y+h), (x, y+h)])
-    def getEnteringCount(self) -> int: return len(self._queue_in)
-    def getLeavingCount(self) -> int: return len(self._queue_out)
-    def getQueueCount(self) -> int: return len(self._queue_in) - len(self._queue_out) # entered but did not leave
-
-    def getQueueEnteringRate(self) -> float:
-        self._ending_time = time.time()
-        return float(len(self._queue_in))/(self._ending_time - self._starting_time)
-
-    def getQueueLeavingRate(self) -> float:
-        self._ending_time = time.time()
-        return float(len(self._queue_out))/(self._ending_time - self._starting_time)
-
-    def updateCouting(self, objects_boxes : dict) -> None:
-        self._last_queued = self._queued.copy()
-        self._queued.clear()
-        for id in objects_boxes.keys(): # for each object detected
-            (x, y, w, h)  = objects_boxes[id]
-            pol = self.getObjectPolygon(x, y, w, h)
-            for polarea in self.trackedAreaPolygons:
-                if pol.intersects(polarea): self._queued.add(id)
-        self._queue_in = self._queue_in.union(self._queued) # update objects entering trackedZone
-        self._queue_out = self._queue_out.union(self._last_queued.difference(self._queued)) # update objects leaving trackedZone
-
-class PedestrianTracker(ObjectsTracker):
-    def __init__(self, sidwalkAreas):
-        super().__init__()
-        for sidewalk in sidwalkAreas:
-            self.trackedAreaPolygons.append(Polygon(sidewalk))
-
-class VehicleTracker(ObjectsTracker):
-    def __init__(self, laneArea):
-        super().__init__()
-        self.trackedAreaPolygons.append(Polygon(laneArea))
-
-class Hitbox:
-    def __init__(self, preset, laneArea : list[list], sidewalkArea : list[list[list]]):
-        self.preset = preset
-        self.laneArea = laneArea
-        self.sidewalkArea = sidewalkArea
