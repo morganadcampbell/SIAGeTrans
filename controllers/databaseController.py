@@ -16,7 +16,7 @@ class DatabaseController:
         return tableColumns
 
     def select(self, tableName : str, id : int) -> DatabaseObject:
-        columnHeaders = [x for x,y in self.tableColumns.get('trafficlights')] ## retrieving table metadata
+        columnHeaders = [x for x,y in self.tableColumns.get(tableName)] ## retrieving table metadata
         query = f"select * from {tableName} where id = {id}" ## composing the query
         self.dbcursor.execute(query) ## executing query
         attributes = dict(zip(columnHeaders,self.dbcursor.fetchall()[0])) ## retrieving table data
@@ -43,14 +43,12 @@ class DatabaseController:
         self.dbconnector.commit() ## commit updates
         return self.dbcursor.rowcount ## retrieving updated rows count
 
-    def getTrafficLightsAtIntersection(self, intersectionId : int):
-        columnHeaders = [x for x,y in self.tableColumns.get('trafficlights')] ## retrieving table metadata
-        query = f"select t.* from trafficlights t join roadsections r on t.id_roadsection = r.id join intersections i on r.id_intersection = i.id where i.id = {intersectionId}" ## composing the query
+    def query(self, headers : list[str], query : str) -> list[DatabaseObject]:
         self.dbcursor.execute(query) ## executing query
-        managedTrafficLights = list()
-        for t in self.dbcursor.fetchall():
-            attributes = dict(zip(columnHeaders,t)) ## composing attributes with retrieved data
-            managedTrafficLights.append(DatabaseObject('trafficlights', **attributes)) ## instantiating an object with retrieved data
-        return managedTrafficLights
-        
+        objects = []
+        payload = self.dbcursor.fetchall()
+        for obj in payload:
+            attributes = dict(zip(headers,obj)) ## retrieving table data
+            objects.append(DatabaseObject(None, **attributes))
+        return objects ## instantiating an object with retrieved data
         
