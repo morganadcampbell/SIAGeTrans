@@ -1,11 +1,5 @@
 {
     "tableName": ["columnName", "columnType"],
-    "weathermeasurements": [
-        ["id", "int"],
-        ["ds_region","str"],
-        ["dt_measurement","str"],
-        ["nr_temperature_c","float"]
-    ],
     "roads": [
         ["id", "int"],
         ["ds_coordinates","str"],
@@ -19,66 +13,62 @@
     "roadsections": [
         ["id", "int"],
         ["ds_coordinates","str"],
+        ["id_intersection","int"],
         ["id_road","int"],
         ["es_status","str"]
     ],
     "sidewalks": [
         ["id", "int"],
-        ["ds_coordinates","str"]
-    ],
-    "crosswalks": [
-        ["id", "int"],
         ["ds_coordinates","str"],
-        ["id_roadsection","int"],
-        ["es_status","str"]
+        ["id_roadsection","int"]
     ],
-    "sidewalk_crosswalk": [
-        ["id", "int"],
-        ["id_sidewalk","int"],
-        ["id_crosswalk","int"]
-    ],
-    "trafficlights": [
-        ["id", "int"],
-        ["ds_coordinates","str"],
-        ["id_roadsection","int"],
-        ["nr_greentime_s","int"],
-        ["nr_yellowtime_s","int"],
-        ["nr_redtime_s","int"],
-        [ "es_status","str"]
-    ],
-    "eventtype": [
+    "tsc_types": [
         ["id", "int"],
         ["ds_description","str"]
     ],
-    "events": [
+    "weather_measurements": [
         ["id", "int"],
-        ["id_eventtype","int"],
+        ["ds_region","str"],
+        ["dt_measurement","str"],
+        ["nr_temperature_c","float"]
+    ],
+    "flooding_events": [
+        ["id", "int"],
         ["dt_creation","str"],
-        ["dt_start","str"],
-        ["dt_expiration","str"],
-        ["ds_comment","str"],
-        [ "es_status","str"]
+        ["nr_severity","int"],
+        ["id_roadsection","int"]
     ],
-    "roadsection_event": [
+    "tsc_programs": [
         ["id", "int"],
-        ["id_roadsection","int"],
-        ["id_event","int"],
-        ["nr_severity","int"]
+        ["id_intersection","int"],
+        ["id_type","int"],
+        ["nr_yellow_duration","int"],
+        ["nr_minimum_duration","int"],
+        ["nr_maximum_duration","int"],
+        ["nr_emergency_priorization","int"],
+        ["nr_flooding_priorization","int"],
+        ["nr_weather_priorization","int"],
+        ["es_status","int"]
     ],
-    "sidewalkmetrics": [
+    "tsc_program_phases": [
         ["id", "int"],
-        ["id_sidewalk","int"],
-        ["dt_timestamp","str"],
-        ["nr_arriverate","float"],
-        ["nr_departurerate","float"],
-        ["nr_pedestriancount","int"]
+        ["id_tsc_program","int"],
+        ["nr_order","int"],
+        ["nr_green_duration","int"]
     ],
-    "trafficlightmetrics": [
+    "traffic_lights_per_phase": [
         ["id", "int"],
-        ["id_trafficlight","int"],
-        ["dt_timestamp","str"],
-        ["nr_arriverate","float"],
-        ["nr_departurerate","float"],
-        ["nr_vehiclecount","int"]
+        ["id_tsc_program_phase","int"],
+        ["ds_coordinates","str"]
+    ],
+    "sidewalks_per_phase": [
+        ["id", "int"],
+        ["id_tsc_program_phase","int"],
+        ["id_sidewalk","int"]
+    ],
+    "roadsections_per_phase": [
+        ["id", "int"],
+        ["id_tsc_program_phase","int"],
+        ["id_roadsection","int"]
     ]
   }

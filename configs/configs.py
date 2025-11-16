@@ -26,3 +26,24 @@ mqtt_broker_intersection_client_config = {
                         "subscriber_topic": "/timeUpdates",
                         "publisher_topic": None
                      }
+
+mqtt_broker_tsccontroller_client_config = { 
+                        "host": "localhost",
+                        "port": 1883,
+                        "qos" : 0,
+                        "keepalive": 60,
+                        "client_name": "TSCController",
+                        "subscriber_topic": "/dataProvision",
+                        "publisher_topic": "/timeUpdates"
+                     }
+
+
+mqtt_broker_videocontroller_client_config = { 
+                        "host": "localhost",
+                        "port": 1883,
+                        "qos" : 0,
+                        "keepalive": 60,
+                        "client_name": "VideoController",
+                        "subscriber_topic": None,
+                        "publisher_topic": "/dataProvision"
+                     }
