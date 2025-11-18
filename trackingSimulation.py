@@ -2,7 +2,7 @@ import cv2
 import json
 import time
 from ultralytics import YOLO
-from controllers.VideoController import *
+from controllers.CameraController import *
 from video_detection.auxiliar.PresetRecognition import *
 
 ###########################################################
@@ -47,7 +47,7 @@ def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams], export
         video_state,status_text = "Searching Preset", ""
         testing_preset,last_gray_frame,shapes = None,None,None
         orb_detector, reference_descriptors = analyze_presets_reference(t.get('preset_examples')) #loading presets
-        videoController = None
+        cameraController = None
 
         if cap.isOpened():
             # fps = cap.get(cv2.CAP_PROP_FPS) or 30
@@ -59,14 +59,14 @@ def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams], export
                 if not success: break
 
                 if framecount % t.get('camera_update_rate') == 0: #testing preset
-                    last_gray_frame, video_state, currentpreset, testing_preset, status_text, confirmation_counter = VideoController.getCameraState(frame, last_gray_frame, orb_detector, reference_descriptors, video_state, currentpreset, testing_preset, confirmation_counter)
+                    last_gray_frame, video_state, currentpreset, testing_preset, status_text, confirmation_counter = CameraController.getCameraState(frame, last_gray_frame, orb_detector, reference_descriptors, video_state, currentpreset, testing_preset, confirmation_counter)
                     if currentpreset is not None and currentpreset != lastpreset:
                         lastpreset = currentpreset
-                        shapes = VideoController.drawHitboxMask(frame, hitboxes[currentpreset]) #loading hitboxs
-                        videoController = VideoController({'0' : VehicleTracker(hitboxes[currentpreset].laneArea)}, {'0' : PedestrianTracker(hitboxes[currentpreset].sidewalkArea)}) #setting trackers
+                        shapes = CameraController.drawHitboxMask(frame, hitboxes[currentpreset]) #loading hitboxs
+                        cameraController = CameraController({'0' : VehicleTracker(hitboxes[currentpreset].laneArea)}, {'0' : PedestrianTracker(hitboxes[currentpreset].sidewalkArea)}) #setting trackers
 
                 if shapes is None and 'Stable' in status_text and currentpreset is not None:
-                    shapes = VideoController.drawHitboxMask(frame, hitboxes[currentpreset]) #loading hitboxs
+                    shapes = CameraController.drawHitboxMask(frame, hitboxes[currentpreset]) #loading hitboxs
                 elif 'Stable' not in status_text or currentpreset is None:
                     shapes = None
 
@@ -79,28 +79,28 @@ def trackingSimulation(hitboxes, tests : list[dict] = [simulationParams], export
                     classes = result.boxes.cls.int().cpu().tolist()
                     ids = result.boxes.id.int().cpu().tolist()
                     # updating object detection
-                    if framecount % t.get('update_rate') == 0 and video_state == "Preset Set" and videoController.getVehicleTracker('0') is not None and videoController.getPedestrianTracker('0') is not None:
+                    if framecount % t.get('update_rate') == 0 and video_state == "Preset Set" and cameraController.getVehicleTracker('0') is not None and cameraController.getPedestrianTracker('0') is not None:
                         pedestrians = {id : box for box,id,cls in zip(boxes,ids,classes) if cls in [0]}
-                        videoController.getPedestrianTracker('0').updateCouting(pedestrians)
+                        cameraController.getPedestrianTracker('0').updateCouting(pedestrians)
                         vehicles = {id : box for box,id,cls in zip(boxes,ids,classes) if cls not in [0]}
-                        videoController.getVehicleTracker('0').updateCouting(vehicles)
+                        cameraController.getVehicleTracker('0').updateCouting(vehicles)
 
                     # Visualize the result on the frame
                     frame = result.plot()
                 
-                if shapes is not None: # Adding hitboxes mask to frame
-                    mask = shapes.astype(bool)
-                    frame[mask] = cv2.addWeighted(frame, 0.3, shapes, 1 - 0.3, 0)[mask]
+                # if shapes is not None: # Adding hitboxes mask to frame
+                #     mask = shapes.astype(bool)
+                #     frame[mask] = cv2.addWeighted(frame, 0.3, shapes, 1 - 0.3, 0)[mask]
                 cv2.putText(frame, status_text, (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0) if video_state == "Preset Set" else (0, 0, 255), 2)
-                if videoController:
-                    phaseData = videoController.getDataFromTracking('0')
-                    cv2.putText(frame, f"Vehicles In: {videoController.getVehicleTracker('0').getEnteringCount()} ( {'{:.2f} veic/s'.format(phaseData['VehiclesEnteringRate'])})", (600,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                    cv2.putText(frame, f"Vehicles Out: {videoController.getVehicleTracker('0').getLeavingCount()} ( {'{:.2f} veic/s'.format(phaseData['VehiclesLeavingRate'])})", (600,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                if cameraController:
+                    phaseData = cameraController.getDataFromTracking('0')
+                    cv2.putText(frame, f"Vehicles In: {cameraController.getVehicleTracker('0').getEnteringCount()} ( {'{:.2f} veic/s'.format(phaseData['VehiclesEnteringRate'])})", (600,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Vehicles Out: {cameraController.getVehicleTracker('0').getLeavingCount()} ( {'{:.2f} veic/s'.format(phaseData['VehiclesLeavingRate'])})", (600,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
                     cv2.putText(frame, f"Vehicles Queued: {phaseData['QueuedVehicles']}", (600,120), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                    cv2.putText(frame, f"Pedestrians In: {videoController.getPedestrianTracker('0').getEnteringCount()} ({'{:.2f} veic/s'.format(phaseData['PedestriansEnteringRate'])})", (20,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                    cv2.putText(frame, f"Pedestrians Out: {videoController.getPedestrianTracker('0').getLeavingCount()} ({'{:.2f} veic/s'.format(phaseData['PedestriansLeavingRate'])})", (20,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Pedestrians In: {cameraController.getPedestrianTracker('0').getEnteringCount()} ({'{:.2f} veic/s'.format(phaseData['PedestriansEnteringRate'])})", (20,60), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"Pedestrians Out: {cameraController.getPedestrianTracker('0').getLeavingCount()} ({'{:.2f} veic/s'.format(phaseData['PedestriansLeavingRate'])})", (20,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
                     cv2.putText(frame, f"Pedestrians Queued: {phaseData['QueuedPedestrians']}", (20,120), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                    cv2.putText(frame, f"{videoController.getVehicleTracker('0').getEnteringList()}", (20,150), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    cv2.putText(frame, f"{cameraController.getVehicleTracker('0').getEnteringList()}", (20,150), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
                 # Display the annotated frame
                 cv2.imshow("Video", frame)

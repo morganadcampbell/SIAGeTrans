@@ -1,5 +1,3 @@
-from DatabaseController import DatabaseController
-from models.databaseObject import DatabaseObject
 from models.client import Client
 import configs.configs as configs
 import time
@@ -8,8 +6,8 @@ class IntersectionClient(Client):
     __controller = None
     def __init__(self, controller):
         clientConfigs = configs.mqtt_broker_intersection_client_config
-        clientConfigs['client_name'] = clientConfigs.get('client_name') + '_' + str(controller.intersectionId) # subscribe as 'intersection_<id>'
-        clientConfigs['subscriber_topic'] = '/' + controller.region + clientConfigs.get('subscriber_topic') # subscribe to topic '/<region code>/timeUpdates'
+        clientConfigs['client_name'] = f"{clientConfigs.get('client_name')}_{controller.intersectionId}" # subscribe as 'intersection_<id>'
+        clientConfigs['subscriber_topic'] = f"/{controller.region}{clientConfigs.get('subscriber_topic')}" # subscribe to topic '/<region code>/timeUpdates'
         super().__init__(**clientConfigs)
         IntersectionClient.__controller = controller
 
@@ -23,7 +21,6 @@ class IntersectionClient(Client):
 class TrafficLightController:
     def __init__(self, intersectionId : int, region : str, phases : list[DatabaseObject]):
         self.intersectionId = intersectionId
-        self.databaseController = DatabaseController()
         self.region = region
         self.__phases = {str(x.getId()) : x for x in phases}
         self.__active = False
@@ -35,7 +32,6 @@ class TrafficLightController:
         for id,time in phasesNewTimes.items():
             print(f"\tPhase_{id} with green times as: {time}")
             self.__phases[id].nr_green_duration = time # updating phase object
-            self.databaseController.update(self.__phases[id]) # updating database
         
     def startManagement(self):
         self.__active = True

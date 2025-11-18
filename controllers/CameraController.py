@@ -10,12 +10,12 @@ from models.Hitbox import *
 
 class DataProvisionClient(Client):
     def __init__(self, regionId : int, intersectionId: int):
-        clientConfigs = configs.mqtt_broker_videocontroller_client_config
+        clientConfigs = configs.mqtt_broker_cameracontroller_client_config
         clientConfigs['client_name'] = f"{clientConfigs.get('client_name')}_{intersectionId}" # subscribe as 'VideoController_<id>'
         clientConfigs['publisher_topic'] = f"/{regionId}{clientConfigs.get('publisher_topic')}" # publish to topic '/<region code>/dataProvision'
         super().__init__(**clientConfigs)
 
-class VideoController:
+class CameraController:
     def __init__(self, vehiclesTrackersPerPhase : dict[VehicleTracker], pedestrianTrackersPerPhase : dict[PedestrianTracker],
                  regionId : int = None, intersectionId: int = None,
                  username : str = None, password : str = None, ca_certificate : str = None, client_certificate : str = None, client_key : str = None):
@@ -54,7 +54,12 @@ class VideoController:
         d['QueuedPedestrians'] = self.__pedestrianTrackersPerPhase[phaseId].getQueueCount()
         d['PedestriansEnteringRate'] = self.__pedestrianTrackersPerPhase[phaseId].getQueueEnteringRate()
         d['PedestriansLeavingRate'] = self.__pedestrianTrackersPerPhase[phaseId].getQueueLeavingRate()
+        d['FloodingStatus'] = None
         return DataProvisionStructure(**d)
+    
+    @staticmethod
+    def getFloodingStatus(frame):
+        pass #TODO
 
     @staticmethod
     def drawHitboxMask(frame, hitbox):
