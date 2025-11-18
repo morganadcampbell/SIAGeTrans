@@ -19,10 +19,10 @@ class IntersectionClient(Client):
             IntersectionClient.__controller.updateTimes(dict(zip(payload[::2], payload[1::2])))
 
 class TrafficLightController:
-    def __init__(self, intersectionId : int, region : str, phases : list[DatabaseObject]):
+    def __init__(self, intersectionId : int, region : str, phases : list[int]):
         self.intersectionId = intersectionId
         self.region = region
-        self.__phases = {str(x.getId()) : x for x in phases}
+        self.__phases = phases
         self.__active = False
 
     def getPhasesId(self) -> list[str]: return self.__phases.keys()
