@@ -4,7 +4,7 @@ class DataProvisionStructure(dict):
         expectedItems = ['PhaseId',
                          'QueuedVehicles', 'VehiclesEnteringRate', 'VehiclesLeavingRate', 
                          'QueuedPedestrians', 'PedestriansEnteringRate', 'PedestriansLeavingRate', 
-                         'EmergencyVehicles']
+                         'EmergencyVehicles', 'FloodingStatus']
         for item in expectedItems:
             if item not in kwargs.keys(): raise Exception(f'{item} not found')
             self[item] = kwargs[item]

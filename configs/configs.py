@@ -38,12 +38,12 @@ mqtt_broker_tsccontroller_client_config = {
                      }
 
 
-mqtt_broker_videocontroller_client_config = { 
+mqtt_broker_cameracontroller_client_config = { 
                         "host": "localhost",
                         "port": 1883,
                         "qos" : 0,
                         "keepalive": 60,
-                        "client_name": "VideoController",
+                        "client_name": "CameraController",
                         "subscriber_topic": None,
                         "publisher_topic": "/dataProvision"
                      }

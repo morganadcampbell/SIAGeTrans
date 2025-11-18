@@ -32,12 +32,6 @@
         ["dt_measurement","str"],
         ["nr_temperature_c","float"]
     ],
-    "flooding_events": [
-        ["id", "int"],
-        ["dt_creation","str"],
-        ["nr_severity","int"],
-        ["id_roadsection","int"]
-    ],
     "tsc_programs": [
         ["id", "int"],
         ["id_intersection","int"],

@@ -1,4 +1,6 @@
+from DatabaseController import DatabaseController
 from models.databaseObject import DatabaseObject
+from BargainSolver import BargainSolver
 from models.DataProvisionStructure import DataProvisionStructure
 from models.client import Client
 import configs.configs as configs
@@ -8,9 +10,9 @@ class TSCClient(Client):
     __controller = None
     def __init__(self, controller):
         clientConfigs = configs.mqtt_broker_tsccontroller_client_config
-        clientConfigs['client_name'] = clientConfigs.get('client_name') + '_' + str(controller.intersectionId) # subscribe as 'TSCController_<id>'
-        clientConfigs['subscriber_topic'] = '/' + controller.region + clientConfigs.get('subscriber_topic') # subscribe to topic '/<region code>/dataProvision'
-        clientConfigs['publisher_topic'] = '/' + controller.region + clientConfigs.get('publisher_topic') # publish to topic '/<region code>/timeUpdates'
+        clientConfigs['client_name'] = f"{clientConfigs.get('client_name')}_{controller.intersectionId}" # subscribe as 'TSCController_<id>'
+        clientConfigs['subscriber_topic'] = f"/{controller.region}{clientConfigs.get('subscriber_topic')}" # subscribe to topic '/<region code>/dataProvision'
+        clientConfigs['publisher_topic'] = f"/{controller.region}{clientConfigs.get('publisher_topic')}" # publish to topic '/<region code>/timeUpdates'
         super().__init__(**clientConfigs)
         TSCClient.__controller = controller
         
@@ -34,7 +36,7 @@ class TSCController:
         self.__ca_certificate = ca_certificate
         self.__client_certificate = client_certificate
         self.__client_key = client_key
-        self.__databaseController = DatabaseObject()
+        self.__databaseController = DatabaseController()
     
     def adapt(self, data : list[DataProvisionStructure]):
         # self.__databaseController
